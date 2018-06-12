@@ -15,7 +15,7 @@ MISSION
 	bannerFail = fail01.png
 	isScoreEnabled = True
 	maxScore = 0
-	historyId = 42c9c474-d9db-46c6-8cee-9870c20808e8
+	historyId = 93d525e2-6095-479c-9f6d-92d7e2039e89
 	activeNodeID = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 	currentScore = 0
 	exportName = 
@@ -561,7 +561,7 @@ MISSION
 						vesselDescription = 
 						playerCreated = False
 						persistentId = 3393267608
-						craftFile = X-71 Orbiter.craft
+						craftFile = X-71 Mated.craft
 						focusonSpawn = False
 						launched = False
 						readyToLaunch = False
@@ -569,7 +569,7 @@ MISSION
 						LOCATION
 						{
 							sit = PRELAUNCH
-							launchSite = Runway
+							launchSite = LaunchPad
 							facility = SPH
 							brakesOn = True
 							GROUNDPOINT
@@ -592,12 +592,12 @@ MISSION
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 247.08437969173139
+								editorRotation = 266.52723705057167
 							}
 						}
 						PARTCREW
 						{
-							partPersistentId = 4290284474
+							partPersistentId = 4288056744
 							vesselPersistentId = 3393267608
 							crew = Valentina Kerman
 						}
@@ -690,7 +690,7 @@ MISSION
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 247.08437969173139
+								editorRotation = 266.52723705057167
 							}
 						}
 					}
