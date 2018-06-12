@@ -1,4 +1,4 @@
-saveMD5 = 83b4fd04c4a85e8be4c80a9272b01364
+saveMD5 = f8d899ee2cef4386efb38f61865ce838
 id = f0a1d5c3-91ee-4006-a202-bb14507b327f
 title = Armageddon: Mir Refueling
 briefing = 
@@ -6,5 +6,5 @@ author = Daniel Tsosie
 hardIcon = False
 difficulty = Intermediate
 vesselCount = 2
-nodeCount = 3
+nodeCount = 5
 startUT = 0

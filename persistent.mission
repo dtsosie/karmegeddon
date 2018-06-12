@@ -15,7 +15,7 @@ MISSION
 	bannerFail = fail01.png
 	isScoreEnabled = True
 	maxScore = 0
-	historyId = 93d525e2-6095-479c-9f6d-92d7e2039e89
+	historyId = c6d63909-f644-4210-8aab-a3eff05ffae1
 	activeNodeID = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 	currentScore = 0
 	exportName = 
@@ -29,7 +29,7 @@ MISSION
 	{
 		version = 1.4.0
 		startType = VesselList
-		startVessel = 3393267608
+		startVessel = 1574579380
 		autoGenerateCrew = False
 		startUT = 0
 		resourceSeed = 735302388
@@ -187,6 +187,37 @@ MISSION
 				{
 					flight = 0
 					0 = Training1,Kerbin
+				}
+				FLIGHT_LOG
+				{
+					flight = 0
+				}
+			}
+			KERBAL
+			{
+				name = Delin Kerman
+				gender = Female
+				type = Crew
+				trait = Engineer
+				brave = 0.320135653
+				dumb = 0.0692806393
+				badS = False
+				veteran = False
+				tour = False
+				state = Assigned
+				inactive = False
+				inactiveTimeEnd = 0
+				gExperienced = 0
+				outDueToG = False
+				ToD = 0
+				idx = 0
+				extraXP = 0
+				suit = Default
+				hero = False
+				CAREER_LOG
+				{
+					flight = 0
+					0 = Training4,Kerbin
 				}
 				FLIGHT_LOG
 				{
@@ -501,6 +532,10 @@ MISSION
 			basicNodeIconURL = 
 			nodeColor = #B2BBC5
 			missionEndOptions = Success
+			TONODEIDS
+			{
+				nodeID = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+			}
 			NODEBODY_PARAMETERS
 			{
 				MODULE_PARAMETER
@@ -511,19 +546,19 @@ MISSION
 			}
 			DOCKEDNODEIDS
 			{
-				nodeID = dbf8a306-e668-4c1b-aab0-09679c1a7b47
+				nodeID = 896dd646-b3ff-408c-92f1-6b0b4c3d8622
 				nodeID = b54f7386-0ff2-4ea5-a377-05812a262e3c
 			}
 		}
 		NODE
 		{
 			title = Spawn Vessel
-			id = dbf8a306-e668-4c1b-aab0-09679c1a7b47
+			id = 896dd646-b3ff-408c-92f1-6b0b4c3d8622
 			description = Spawn a Vessel somewhere in the universe
 			category = Spawnable
 			showScreenMessage = False
 			msgTime = 5
-			editorPosition = 125,0
+			editorPosition = -4723.77295,4998.28906
 			isStartNode = False
 			isEndNode = False
 			message = 
@@ -560,7 +595,7 @@ MISSION
 						ship = Freedom
 						vesselDescription = 
 						playerCreated = False
-						persistentId = 3393267608
+						persistentId = 1574579380
 						craftFile = X-71 Mated.craft
 						focusonSpawn = False
 						launched = False
@@ -570,14 +605,14 @@ MISSION
 						{
 							sit = PRELAUNCH
 							launchSite = LaunchPad
-							facility = SPH
-							brakesOn = True
+							facility = VAB
+							brakesOn = False
 							GROUNDPOINT
 							{
 								bodyName = Kerbin
 								gizmoIcon = Rocket
-								lat = 0
-								lon = 0
+								lat = 0.12523957574846611
+								lon = -74.81838181846561
 								alt = 0
 								rot = 0,0,0
 								splashed = True
@@ -592,13 +627,13 @@ MISSION
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 266.52723705057167
+								editorRotation = 249.5885764181607
 							}
 						}
 						PARTCREW
 						{
-							partPersistentId = 4288056744
-							vesselPersistentId = 3393267608
+							partPersistentId = 4270115010
+							vesselPersistentId = 1574579380
 							crew = Valentina Kerman
 						}
 					}
@@ -682,16 +717,22 @@ MISSION
 							}
 							ORBIT
 							{
-								SMA = 750000
+								SMA = 700000
 								ECC = 0
 								INC = 0.0001
 								LPE = 0
-								LAN = 0
+								LAN = 200
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 266.52723705057167
+								editorRotation = 249.5885764181607
 							}
+						}
+						PARTCREW
+						{
+							partPersistentId = 4283973356
+							vesselPersistentId = 560805478
+							crew = Delin Kerman
 						}
 					}
 				}
@@ -705,6 +746,175 @@ MISSION
 				}
 			}
 		}
+		NODE
+		{
+			title = Dialog Message
+			id = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+			description = Display a message in a dialog box
+			category = Utility
+			showScreenMessage = False
+			msgTime = 5
+			editorPosition = 466.560547,141.333984
+			isStartNode = False
+			isEndNode = False
+			message = 
+			isObjective = False
+			isCatchAll = False
+			isEvent = False
+			activateOnceOnly = True
+			activatedUT = 0
+			isLogicNode = False
+			basicNodeSource = DialogMessage
+			basicNodeIconURL = dialog-message
+			nodeColor = #F68834
+			missionEndOptions = Success
+			FROMNODES
+			{
+				FROMNODE
+				{
+					nodeID = 4f9f95b1-98aa-451c-8a18-f5046413b10f
+					connectorColor = #FFFFFF
+				}
+			}
+			TONODEIDS
+			{
+				nodeID = af064865-4849-4e03-a8d8-a113c5c30ed2
+			}
+			TESTGROUPS
+			{
+				TESTGROUP
+				{
+					title = 
+				}
+			}
+			ACTIONS
+			{
+				ACTIONMODULE
+				{
+					name = ActionDialogMessage
+					title = Dialog Message
+					parametersDisplayedInSAP = messageHeading
+					parametersDisplayedInSAP = message
+					parametersDisplayedInSAP = missionInstructor
+					restartOnSceneLoad = False
+					isRunning = False
+					messageHeading = Piloting
+					message = Set engine to one hash below 1/3. Enable SAS, Enable RCS, Hit Space Bar twice and aim directly east.
+					instructorName = Instructor_Gene
+					vintageSuit = False
+					textAreaSize = 135
+					pauseMission = True
+					screenArea = Right
+					autoClose = False
+					autoCloseTimeOut = 20
+					isBriefingMessage = False
+					autoGrowDialogHeight = False
+				}
+			}
+			NODEBODY_PARAMETERS
+			{
+				MODULE_PARAMETER
+				{
+					module = ActionDialogMessage
+					parameter = missionInstructor
+				}
+			}
+		}
+		NODE
+		{
+			title = Test Distance
+			id = af064865-4849-4e03-a8d8-a113c5c30ed2
+			description = Check the distance between a vessel and an object
+			category = Location
+			showScreenMessage = False
+			msgTime = 5
+			editorPosition = 470.560547,7.33398438
+			isStartNode = False
+			isEndNode = True
+			message = 
+			isObjective = False
+			isCatchAll = False
+			isEvent = False
+			activateOnceOnly = True
+			activatedUT = 0
+			isLogicNode = False
+			basicNodeSource = Distance
+			basicNodeIconURL = test-vessel-distance-to-another-vessel
+			nodeColor = #73D2D6
+			missionEndOptions = Success
+			FROMNODES
+			{
+				FROMNODE
+				{
+					nodeID = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+					connectorColor = #FFFFFF
+				}
+			}
+			TESTGROUPS
+			{
+				TESTGROUP
+				{
+					title = 
+					TESTMODULE
+					{
+						name = TestDistance
+						title = Test Distance
+						distanceFromTarget = Vessel
+						distanceFromVesselID = 1574579380
+						distanceToTarget = Vessel
+						distanceToVesselID = 560805478
+						kerbalName = Bob Kerman
+						kerbalType = Crew
+						bodyName = Kerbin
+						distanceToAsteroidID = 0
+						distanceToFlagID = 0
+						distanceToLaunchSiteName = LaunchPad
+						distanceToNode = 00000000-0000-0000-0000-000000000000
+						calculationType = StraightLine
+						comparisonOperator = LessThan
+						distance = 500
+						DISTANCEFROMKERBAL
+						{
+							kerbalName = Bob Kerman
+							kerbalType = Crew
+						}
+						DISTANCETOKERBAL
+						{
+							kerbalName = Bob Kerman
+							kerbalType = Crew
+						}
+						DISTANCETOLOCATION
+						{
+							bodyName = Kerbin
+							gizmoIcon = Flag
+							lat = 0.0039405735798582146
+							lon = -74.552645414443091
+							alt = 0
+							rot = 0,0,0
+							splashed = False
+						}
+					}
+				}
+			}
+			NODEBODY_PARAMETERS
+			{
+				MODULE_PARAMETER
+				{
+					module = TestDistance
+					parameter = distanceFromTarget
+				}
+				MODULE_PARAMETER
+				{
+					module = TestDistance
+					parameter = distanceToTarget
+				}
+				MODULE_PARAMETER
+				{
+					module = TestDistance
+					parameter = distance
+				}
+			}
+		}
 	}
 	TAGS
 	{
@@ -715,7 +925,24 @@ MISSION
 		{
 			PATHINFO
 			{
+				startNodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+			}
+			PATHINFO
+			{
+				startNodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+				PATH
+				{
+					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+				}
+			}
+			PATHINFO
+			{
 				startNodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
+				PATH
+				{
+					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+				}
 			}
 		}
 		REVERSEPATHS
@@ -724,15 +951,40 @@ MISSION
 			{
 				startNodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 			}
+			PATHINFO
+			{
+				startNodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+				PATH
+				{
+					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
+				}
+			}
+			PATHINFO
+			{
+				startNodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+				PATH
+				{
+					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
+				}
+			}
 		}
 		BLOCKS
 		{
+			NODE
+			{
+				id = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+			}
+			NODE
+			{
+				id = af064865-4849-4e03-a8d8-a113c5c30ed2
+			}
 		}
 	}
 }
 EDITOR_STATUS
 {
-	canvasPosition = 4099.11914,-4292.00098
+	canvasPosition = 4097.11914,-4290.00098
 	zoomLevel = 1
 	canvasSize = 10000,10000
 }
