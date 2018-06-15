@@ -1,10 +1,10 @@
-saveMD5 = f8d899ee2cef4386efb38f61865ce838
+saveMD5 = 77fe70b8486b267fcc929aa6d7597449
 id = f0a1d5c3-91ee-4006-a202-bb14507b327f
-title = Armageddon: Mir Refueling
+title = Karmageddon
 briefing = 
 author = Daniel Tsosie
 hardIcon = False
 difficulty = Intermediate
 vesselCount = 2
-nodeCount = 5
+nodeCount = 9
 startUT = 0

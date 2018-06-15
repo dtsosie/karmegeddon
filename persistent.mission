@@ -1,7 +1,7 @@
 MISSION
 {
 	id = f0a1d5c3-91ee-4006-a202-bb14507b327f
-	title = Armageddon: Mir Refueling
+	title = Karmageddon
 	briefing = 
 	author = Daniel Tsosie
 	modsBriefing = 
@@ -15,7 +15,7 @@ MISSION
 	bannerFail = fail01.png
 	isScoreEnabled = True
 	maxScore = 0
-	historyId = c6d63909-f644-4210-8aab-a3eff05ffae1
+	historyId = 4bdb6a32-ee6a-4faa-887f-6b0713638b9a
 	activeNodeID = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 	currentScore = 0
 	exportName = 
@@ -398,10 +398,6 @@ MISSION
 			score = 0
 			resourceName = LiquidFuel
 			resourceAmount = 0
-			PROGRESS
-			{
-				totalSpentResource = 0
-			}
 		}
 		AWARDMODULE
 		{
@@ -410,10 +406,6 @@ MISSION
 			awardID = KerbalsSurvived
 			enabled = False
 			score = 0
-			PROGRESS
-			{
-				kerbalsAreAlive = True
-			}
 		}
 		AWARDMODULE
 		{
@@ -431,10 +423,6 @@ MISSION
 			enabled = False
 			score = 0
 			distance = 0
-			PROGRESS
-			{
-				distanceTraveled = 0
-			}
 		}
 		AWARDMODULE
 		{
@@ -444,10 +432,6 @@ MISSION
 			enabled = False
 			score = 0
 			distance = 0
-			PROGRESS
-			{
-				distanceTraveled = 0
-			}
 		}
 		AWARDMODULE
 		{
@@ -457,9 +441,6 @@ MISSION
 			enabled = False
 			score = 0
 			vesselsUsed = 0
-			PROGRESS
-			{
-			}
 		}
 		AWARDMODULE
 		{
@@ -479,9 +460,6 @@ MISSION
 			enabled = False
 			score = 0
 			planetsLanded = 0
-			PROGRESS
-			{
-			}
 		}
 		AWARDMODULE
 		{
@@ -627,7 +605,7 @@ MISSION
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 249.5885764181607
+								editorRotation = 230.00071287128713
 							}
 						}
 						PARTCREW
@@ -725,7 +703,7 @@ MISSION
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 249.5885764181607
+								editorRotation = 230.00071287128713
 							}
 						}
 						PARTCREW
@@ -830,7 +808,7 @@ MISSION
 			msgTime = 5
 			editorPosition = 470.560547,7.33398438
 			isStartNode = False
-			isEndNode = True
+			isEndNode = False
 			message = 
 			isObjective = False
 			isCatchAll = False
@@ -849,6 +827,10 @@ MISSION
 					nodeID = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					connectorColor = #FFFFFF
 				}
+			}
+			TONODEIDS
+			{
+				nodeID = f02c0cd5-89e5-426d-a371-0467600385a6
 			}
 			TESTGROUPS
 			{
@@ -915,6 +897,321 @@ MISSION
 				}
 			}
 		}
+		NODE
+		{
+			title = Display Message
+			id = f02c0cd5-89e5-426d-a371-0467600385a6
+			description = Display an on-screen message
+			category = Utility
+			showScreenMessage = False
+			msgTime = 5
+			editorPosition = 476.560547,-187.33252
+			isStartNode = False
+			isEndNode = False
+			message = 
+			isObjective = False
+			isCatchAll = False
+			isEvent = False
+			activateOnceOnly = True
+			activatedUT = 0
+			isLogicNode = False
+			basicNodeSource = Message
+			basicNodeIconURL = display-message
+			nodeColor = #F68834
+			missionEndOptions = Success
+			FROMNODES
+			{
+				FROMNODE
+				{
+					nodeID = af064865-4849-4e03-a8d8-a113c5c30ed2
+					connectorColor = #FFFFFF
+				}
+			}
+			TONODEIDS
+			{
+				nodeID = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+			}
+			TESTGROUPS
+			{
+				TESTGROUP
+				{
+					title = 
+				}
+			}
+			ACTIONS
+			{
+				ACTIONMODULE
+				{
+					name = ActionMessage
+					title = Display Message
+					parametersDisplayedInSAP = message
+					parametersDisplayedInSAP = duration
+					parametersDisplayedInSAP = style
+					restartOnSceneLoad = False
+					isRunning = False
+					message = Dock with Mir
+					duration = 5
+					style = UPPER_LEFT
+				}
+			}
+			NODEBODY_PARAMETERS
+			{
+				MODULE_PARAMETER
+				{
+					module = ActionMessage
+					parameter = message
+				}
+				MODULE_PARAMETER
+				{
+					module = ActionMessage
+					parameter = duration
+				}
+			}
+		}
+		NODE
+		{
+			title = Part Docking / Undocking
+			id = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+			description = Test whether two parts are docked in the same vessel or not
+			category = Vessel
+			showScreenMessage = False
+			msgTime = 5
+			editorPosition = 838.560547,138.66748
+			isStartNode = False
+			isEndNode = False
+			message = 
+			isObjective = True
+			isCatchAll = False
+			isEvent = False
+			activateOnceOnly = True
+			activatedUT = 0
+			isLogicNode = False
+			basicNodeSource = TestPartDocking
+			basicNodeIconURL = PartDocking-Undocking
+			nodeColor = #3F8CED
+			missionEndOptions = Success
+			FROMNODES
+			{
+				FROMNODE
+				{
+					nodeID = f02c0cd5-89e5-426d-a371-0467600385a6
+					connectorColor = #FFFFFF
+				}
+			}
+			TONODEIDS
+			{
+				nodeID = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
+			}
+			TESTGROUPS
+			{
+				TESTGROUP
+				{
+					title = 
+					TESTMODULE
+					{
+						name = TestPartDocking
+						title = #autoLOC_8002013
+						parametersDisplayedInSAP = partOnevesselPartIDs
+						parametersDisplayedInSAP = partTwovesselPartIDs
+						parametersDisplayedInSAP = dockedUndocked
+						dockedUndocked = Docked
+						PARTONE
+						{
+							partPersistentId = 0
+							vesselPersistentId = 1574579380
+							partName = Any
+						}
+						PARTTWO
+						{
+							partPersistentId = 0
+							vesselPersistentId = 560805478
+							partName = Any
+						}
+					}
+				}
+			}
+			NODEBODY_PARAMETERS
+			{
+				MODULE_PARAMETER
+				{
+					module = TestPartDocking
+					parameter = partOnevesselPartIDs
+				}
+				MODULE_PARAMETER
+				{
+					module = TestPartDocking
+					parameter = partTwovesselPartIDs
+				}
+				MODULE_PARAMETER
+				{
+					module = TestPartDocking
+					parameter = dockedUndocked
+				}
+			}
+		}
+		NODE
+		{
+			title = Resource Drain
+			id = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
+			description = Change amount of resource in a part over time
+			category = Vessel
+			showScreenMessage = False
+			msgTime = 5
+			editorPosition = 838.560547,-77.3325195
+			isStartNode = False
+			isEndNode = False
+			message = 
+			isObjective = False
+			isCatchAll = False
+			isEvent = False
+			activateOnceOnly = True
+			activatedUT = 0
+			isLogicNode = False
+			basicNodeSource = ActionPartResourceDrain
+			basicNodeIconURL = action-part-resource-drain
+			nodeColor = #3F8CED
+			missionEndOptions = Success
+			FROMNODES
+			{
+				FROMNODE
+				{
+					nodeID = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+					connectorColor = #FFFFFF
+				}
+			}
+			TONODEIDS
+			{
+				nodeID = aeb04335-86f9-49e1-a396-518e040aacae
+			}
+			TESTGROUPS
+			{
+				TESTGROUP
+				{
+					title = 
+				}
+			}
+			ACTIONS
+			{
+				ACTIONMODULE
+				{
+					name = ActionPartResourceDrain
+					title = Resource Drain
+					parametersDisplayedInSAP = timePeriod
+					parametersDisplayedInSAP = amountToDrain
+					parametersDisplayedInSAP = vesselPartIDs
+					parametersDisplayedInSAP = resourceName
+					restartOnSceneLoad = True
+					isRunning = False
+					timePeriod = 0
+					amountToDrain = -100
+					resourceName = 
+					leftToDrain = 0
+					partPersistentId = 0
+					vesselPersistentId = 1574579380
+					partName = Any
+				}
+			}
+			NODEBODY_PARAMETERS
+			{
+				MODULE_PARAMETER
+				{
+					module = ActionPartResourceDrain
+					parameter = timePeriod
+				}
+				MODULE_PARAMETER
+				{
+					module = ActionPartResourceDrain
+					parameter = amountToDrain
+				}
+				MODULE_PARAMETER
+				{
+					module = ActionPartResourceDrain
+					parameter = vesselPartIDs
+				}
+				MODULE_PARAMETER
+				{
+					module = ActionPartResourceDrain
+					parameter = resourceName
+				}
+			}
+		}
+		NODE
+		{
+			title = Part Docking / Undocking
+			id = aeb04335-86f9-49e1-a396-518e040aacae
+			description = Test whether two parts are docked in the same vessel or not
+			category = Vessel
+			showScreenMessage = False
+			msgTime = 5
+			editorPosition = 840.560547,-311.33252
+			isStartNode = False
+			isEndNode = True
+			message = 
+			isObjective = True
+			isCatchAll = False
+			isEvent = False
+			activateOnceOnly = True
+			activatedUT = 0
+			isLogicNode = False
+			basicNodeSource = TestPartDocking
+			basicNodeIconURL = PartDocking-Undocking
+			nodeColor = #3F8CED
+			missionEndOptions = Success
+			FROMNODES
+			{
+				FROMNODE
+				{
+					nodeID = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
+					connectorColor = #FFFFFF
+				}
+			}
+			TESTGROUPS
+			{
+				TESTGROUP
+				{
+					title = 
+					TESTMODULE
+					{
+						name = TestPartDocking
+						title = #autoLOC_8002013
+						parametersDisplayedInSAP = partOnevesselPartIDs
+						parametersDisplayedInSAP = partTwovesselPartIDs
+						parametersDisplayedInSAP = dockedUndocked
+						dockedUndocked = Undocked
+						PARTONE
+						{
+							partPersistentId = 0
+							vesselPersistentId = 1574579380
+							partName = Any
+						}
+						PARTTWO
+						{
+							partPersistentId = 0
+							vesselPersistentId = 560805478
+							partName = Any
+						}
+					}
+				}
+			}
+			NODEBODY_PARAMETERS
+			{
+				MODULE_PARAMETER
+				{
+					module = TestPartDocking
+					parameter = partOnevesselPartIDs
+				}
+				MODULE_PARAMETER
+				{
+					module = TestPartDocking
+					parameter = partTwovesselPartIDs
+				}
+				MODULE_PARAMETER
+				{
+					module = TestPartDocking
+					parameter = dockedUndocked
+				}
+			}
+		}
 	}
 	TAGS
 	{
@@ -925,7 +1222,45 @@ MISSION
 		{
 			PATHINFO
 			{
+				startNodeId = aeb04335-86f9-49e1-a396-518e040aacae
+			}
+			PATHINFO
+			{
+				startNodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
+				PATH
+				{
+					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
+				}
+			}
+			PATHINFO
+			{
+				startNodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+				PATH
+				{
+					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
+					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
+				}
+			}
+			PATHINFO
+			{
+				startNodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+				PATH
+				{
+					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
+					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
+				}
+			}
+			PATHINFO
+			{
 				startNodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+				PATH
+				{
+					nodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
+					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
+				}
 			}
 			PATHINFO
 			{
@@ -933,6 +1268,10 @@ MISSION
 				PATH
 				{
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+					nodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
+					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
 				}
 			}
 			PATHINFO
@@ -942,6 +1281,10 @@ MISSION
 				{
 					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+					nodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
+					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
 				}
 			}
 		}
@@ -968,6 +1311,52 @@ MISSION
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 				}
 			}
+			PATHINFO
+			{
+				startNodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+				PATH
+				{
+					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
+				}
+			}
+			PATHINFO
+			{
+				startNodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+				PATH
+				{
+					nodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
+				}
+			}
+			PATHINFO
+			{
+				startNodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
+				PATH
+				{
+					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+					nodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
+				}
+			}
+			PATHINFO
+			{
+				startNodeId = aeb04335-86f9-49e1-a396-518e040aacae
+				PATH
+				{
+					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
+					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+					nodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
+				}
+			}
 		}
 		BLOCKS
 		{
@@ -979,12 +1368,28 @@ MISSION
 			{
 				id = af064865-4849-4e03-a8d8-a113c5c30ed2
 			}
+			NODE
+			{
+				id = f02c0cd5-89e5-426d-a371-0467600385a6
+			}
+			NODE
+			{
+				id = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+			}
+			NODE
+			{
+				id = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
+			}
+			NODE
+			{
+				id = aeb04335-86f9-49e1-a396-518e040aacae
+			}
 		}
 	}
 }
 EDITOR_STATUS
 {
-	canvasPosition = 4097.11914,-4290.00098
+	canvasPosition = 3411.11914,-4350.00098
 	zoomLevel = 1
 	canvasSize = 10000,10000
 }
