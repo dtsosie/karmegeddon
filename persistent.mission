@@ -15,7 +15,7 @@ MISSION
 	bannerFail = fail01.png
 	isScoreEnabled = True
 	maxScore = 0
-	historyId = 4bdb6a32-ee6a-4faa-887f-6b0713638b9a
+	historyId = 5a332bb7-73bf-402f-b554-aee80bcaa93f
 	activeNodeID = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 	currentScore = 0
 	exportName = 
@@ -398,6 +398,10 @@ MISSION
 			score = 0
 			resourceName = LiquidFuel
 			resourceAmount = 0
+			PROGRESS
+			{
+				totalSpentResource = 0
+			}
 		}
 		AWARDMODULE
 		{
@@ -406,6 +410,10 @@ MISSION
 			awardID = KerbalsSurvived
 			enabled = False
 			score = 0
+			PROGRESS
+			{
+				kerbalsAreAlive = True
+			}
 		}
 		AWARDMODULE
 		{
@@ -423,6 +431,10 @@ MISSION
 			enabled = False
 			score = 0
 			distance = 0
+			PROGRESS
+			{
+				distanceTraveled = 0
+			}
 		}
 		AWARDMODULE
 		{
@@ -432,6 +444,10 @@ MISSION
 			enabled = False
 			score = 0
 			distance = 0
+			PROGRESS
+			{
+				distanceTraveled = 0
+			}
 		}
 		AWARDMODULE
 		{
@@ -441,6 +457,9 @@ MISSION
 			enabled = False
 			score = 0
 			vesselsUsed = 0
+			PROGRESS
+			{
+			}
 		}
 		AWARDMODULE
 		{
@@ -460,6 +479,9 @@ MISSION
 			enabled = False
 			score = 0
 			planetsLanded = 0
+			PROGRESS
+			{
+			}
 		}
 		AWARDMODULE
 		{
@@ -605,7 +627,7 @@ MISSION
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 230.00071287128713
+								editorRotation = 284.92534106714368
 							}
 						}
 						PARTCREW
@@ -703,7 +725,7 @@ MISSION
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 230.00071287128713
+								editorRotation = 284.92534106714368
 							}
 						}
 						PARTCREW
@@ -777,7 +799,7 @@ MISSION
 					restartOnSceneLoad = False
 					isRunning = False
 					messageHeading = Piloting
-					message = Set engine to one hash below 1/3. Enable SAS, Enable RCS, Hit Space Bar twice and aim directly east.
+					message = Set engine to 2/3. Enable SAS, Enable RCS, Hit Space Bar twice and aim slightly east.
 					instructorName = Instructor_Gene
 					vintageSuit = False
 					textAreaSize = 135
@@ -1389,7 +1411,7 @@ MISSION
 }
 EDITOR_STATUS
 {
-	canvasPosition = 3411.11914,-4350.00098
+	canvasPosition = 3855.11914,-4324.00098
 	zoomLevel = 1
 	canvasSize = 10000,10000
 }
