@@ -15,7 +15,7 @@ MISSION
 	bannerFail = fail01.png
 	isScoreEnabled = True
 	maxScore = 0
-	historyId = 9dfbf7a0-cdc4-4b97-a4fb-644e3abc1034
+	historyId = e5cbc138-7f81-4fcd-bae2-f370639502af
 	activeNodeID = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 	currentScore = 0
 	exportName = 
@@ -627,7 +627,7 @@ MISSION
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 332.62615901571854
+								editorRotation = 116.55186916647655
 							}
 						}
 						PARTCREW
@@ -717,15 +717,15 @@ MISSION
 							}
 							ORBIT
 							{
-								SMA = 690000
-								ECC = 0
+								SMA = 690000.5
+								ECC = 9.9999999739376724E-07
 								INC = 0.0001
 								LPE = 0
-								LAN = 200
+								LAN = 320
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 332.62615901571854
+								editorRotation = 116.55186916647655
 							}
 						}
 						PARTCREW
@@ -799,7 +799,7 @@ MISSION
 					restartOnSceneLoad = False
 					isRunning = False
 					messageHeading = Piloting
-					message = Set engine to 2/3. Enable SAS, Enable RCS, Hit Space Bar twice and aim slightly east.
+					message = Set engine to full. Enable SAS, Hit Space Bar to trigger Engines, hit again to lift off.
 					instructorName = Instructor_Gene
 					vintageSuit = False
 					textAreaSize = 135
@@ -1411,7 +1411,7 @@ MISSION
 }
 EDITOR_STATUS
 {
-	canvasPosition = 3855.11914,-4324.00098
+	canvasPosition = 3875.8125,-4288.87646
 	zoomLevel = 1
 	canvasSize = 10000,10000
 }
