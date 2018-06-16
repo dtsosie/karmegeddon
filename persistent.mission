@@ -15,7 +15,7 @@ MISSION
 	bannerFail = fail01.png
 	isScoreEnabled = True
 	maxScore = 0
-	historyId = 45cf9272-57aa-48c9-a2f8-4b3dada86bfd
+	historyId = 7745d831-d051-4e51-826c-c75cf4abc328
 	activeNodeID = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 	currentScore = 0
 	exportName = 
@@ -627,7 +627,7 @@ MISSION
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 289.20515793970554
+								editorRotation = 302.79430927492501
 							}
 						}
 						PARTCREW
@@ -725,7 +725,7 @@ MISSION
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 289.20515793970554
+								editorRotation = 302.79430927492501
 							}
 						}
 						PARTCREW
