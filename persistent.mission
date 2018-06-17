@@ -15,7 +15,7 @@ MISSION
 	bannerFail = fail01.png
 	isScoreEnabled = True
 	maxScore = 0
-	historyId = 4332f155-1ca9-4df2-a167-fde343184065
+	historyId = 6f8a0da0-d3f9-428a-ade8-c3a9bcb65351
 	activeNodeID = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 	currentScore = 0
 	exportName = 
@@ -398,10 +398,6 @@ MISSION
 			score = 0
 			resourceName = LiquidFuel
 			resourceAmount = 0
-			PROGRESS
-			{
-				totalSpentResource = 0
-			}
 		}
 		AWARDMODULE
 		{
@@ -410,10 +406,6 @@ MISSION
 			awardID = KerbalsSurvived
 			enabled = False
 			score = 0
-			PROGRESS
-			{
-				kerbalsAreAlive = True
-			}
 		}
 		AWARDMODULE
 		{
@@ -431,10 +423,6 @@ MISSION
 			enabled = False
 			score = 0
 			distance = 0
-			PROGRESS
-			{
-				distanceTraveled = 0
-			}
 		}
 		AWARDMODULE
 		{
@@ -444,10 +432,6 @@ MISSION
 			enabled = False
 			score = 0
 			distance = 0
-			PROGRESS
-			{
-				distanceTraveled = 0
-			}
 		}
 		AWARDMODULE
 		{
@@ -457,9 +441,6 @@ MISSION
 			enabled = False
 			score = 0
 			vesselsUsed = 0
-			PROGRESS
-			{
-			}
 		}
 		AWARDMODULE
 		{
@@ -479,9 +460,6 @@ MISSION
 			enabled = False
 			score = 0
 			planetsLanded = 0
-			PROGRESS
-			{
-			}
 		}
 		AWARDMODULE
 		{
@@ -628,7 +606,7 @@ MISSION
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 276.90928658451946
+								editorRotation = 86.892376049214619
 							}
 						}
 						PARTCREW
@@ -726,7 +704,7 @@ MISSION
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 276.90928658451946
+								editorRotation = 86.892376049214619
 							}
 						}
 						PARTCREW
