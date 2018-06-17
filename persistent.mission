@@ -15,7 +15,7 @@ MISSION
 	bannerFail = fail01.png
 	isScoreEnabled = True
 	maxScore = 0
-	historyId = 6f8a0da0-d3f9-428a-ade8-c3a9bcb65351
+	historyId = bd8474e3-9acb-4a3e-a565-985b7cae4b44
 	activeNodeID = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 	currentScore = 0
 	exportName = 
@@ -398,6 +398,10 @@ MISSION
 			score = 0
 			resourceName = LiquidFuel
 			resourceAmount = 0
+			PROGRESS
+			{
+				totalSpentResource = 0
+			}
 		}
 		AWARDMODULE
 		{
@@ -406,6 +410,10 @@ MISSION
 			awardID = KerbalsSurvived
 			enabled = False
 			score = 0
+			PROGRESS
+			{
+				kerbalsAreAlive = True
+			}
 		}
 		AWARDMODULE
 		{
@@ -423,6 +431,10 @@ MISSION
 			enabled = False
 			score = 0
 			distance = 0
+			PROGRESS
+			{
+				distanceTraveled = 0
+			}
 		}
 		AWARDMODULE
 		{
@@ -432,6 +444,10 @@ MISSION
 			enabled = False
 			score = 0
 			distance = 0
+			PROGRESS
+			{
+				distanceTraveled = 0
+			}
 		}
 		AWARDMODULE
 		{
@@ -441,6 +457,9 @@ MISSION
 			enabled = False
 			score = 0
 			vesselsUsed = 0
+			PROGRESS
+			{
+			}
 		}
 		AWARDMODULE
 		{
@@ -460,6 +479,9 @@ MISSION
 			enabled = False
 			score = 0
 			planetsLanded = 0
+			PROGRESS
+			{
+			}
 		}
 		AWARDMODULE
 		{
@@ -606,7 +628,7 @@ MISSION
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 86.892376049214619
+								editorRotation = 117.07571054966728
 							}
 						}
 						PARTCREW
@@ -704,12 +726,12 @@ MISSION
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 86.892376049214619
+								editorRotation = 117.07571054966728
 							}
 						}
 						PARTCREW
 						{
-							partPersistentId = 4283973356
+							partPersistentId = 4287668452
 							vesselPersistentId = 560805478
 							crew = Delin Kerman
 						}
@@ -807,7 +829,7 @@ MISSION
 			category = Location
 			showScreenMessage = False
 			msgTime = 5
-			editorPosition = 473.060547,-22.6655273
+			editorPosition = 463.060547,-0.165039063
 			isStartNode = False
 			isEndNode = False
 			message = 
@@ -831,7 +853,7 @@ MISSION
 			}
 			TONODEIDS
 			{
-				nodeID = f02c0cd5-89e5-426d-a371-0467600385a6
+				nodeID = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 			}
 			TESTGROUPS
 			{
@@ -849,10 +871,10 @@ MISSION
 						kerbalName = Bob Kerman
 						kerbalType = Crew
 						bodyName = Kerbin
-						distanceToAsteroidID = 0
+						distanceToAsteroidID = 1852017030
 						distanceToFlagID = 0
 						distanceToLaunchSiteName = LaunchPad
-						distanceToNode = 00000000-0000-0000-0000-000000000000
+						distanceToNode = 305df3cd-9acb-4864-a649-b550d12ac06b
 						calculationType = StraightLine
 						comparisonOperator = LessThan
 						distance = 10000
@@ -900,13 +922,13 @@ MISSION
 		}
 		NODE
 		{
-			title = Display Message
-			id = f02c0cd5-89e5-426d-a371-0467600385a6
-			description = Display an on-screen message
+			title = Dialog Message
+			id = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
+			description = Display a message in a dialog box
 			category = Utility
 			showScreenMessage = False
 			msgTime = 5
-			editorPosition = 479.060059,-264.83252
+			editorPosition = 470.200195,-234.290527
 			isStartNode = False
 			isEndNode = False
 			message = 
@@ -916,8 +938,8 @@ MISSION
 			activateOnceOnly = True
 			activatedUT = 0
 			isLogicNode = False
-			basicNodeSource = Message
-			basicNodeIconURL = display-message
+			basicNodeSource = DialogMessage
+			basicNodeIconURL = dialog-message
 			nodeColor = #F68834
 			missionEndOptions = Success
 			FROMNODES
@@ -943,29 +965,31 @@ MISSION
 			{
 				ACTIONMODULE
 				{
-					name = ActionMessage
-					title = Display Message
+					name = ActionDialogMessage
+					title = Dialog Message
+					parametersDisplayedInSAP = messageHeading
 					parametersDisplayedInSAP = message
-					parametersDisplayedInSAP = duration
-					parametersDisplayedInSAP = style
+					parametersDisplayedInSAP = missionInstructor
 					restartOnSceneLoad = False
 					isRunning = False
-					message = Dock with Mir
-					duration = 10
-					style = UPPER_LEFT
+					message = You are in range of Kir. You are clear to dock.
+					instructorName = Instructor_Gene
+					vintageSuit = False
+					textAreaSize = 135
+					pauseMission = False
+					screenArea = Center
+					autoClose = False
+					autoCloseTimeOut = 20
+					isBriefingMessage = False
+					autoGrowDialogHeight = False
 				}
 			}
 			NODEBODY_PARAMETERS
 			{
 				MODULE_PARAMETER
 				{
-					module = ActionMessage
-					parameter = message
-				}
-				MODULE_PARAMETER
-				{
-					module = ActionMessage
-					parameter = duration
+					module = ActionDialogMessage
+					parameter = missionInstructor
 				}
 			}
 		}
@@ -995,7 +1019,7 @@ MISSION
 			{
 				FROMNODE
 				{
-					nodeID = f02c0cd5-89e5-426d-a371-0467600385a6
+					nodeID = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					connectorColor = #FFFFFF
 				}
 			}
@@ -1856,7 +1880,7 @@ MISSION
 			}
 			PATHINFO
 			{
-				startNodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+				startNodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 				PATH
 				{
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
@@ -1875,7 +1899,7 @@ MISSION
 				startNodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
 				PATH
 				{
-					nodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
@@ -1893,7 +1917,7 @@ MISSION
 				PATH
 				{
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
@@ -1912,7 +1936,7 @@ MISSION
 				{
 					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
@@ -1950,7 +1974,7 @@ MISSION
 			}
 			PATHINFO
 			{
-				startNodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+				startNodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 				PATH
 				{
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
@@ -1963,7 +1987,7 @@ MISSION
 				startNodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 				PATH
 				{
-					nodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
 					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
@@ -1975,7 +1999,7 @@ MISSION
 				PATH
 				{
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
 					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
@@ -1988,7 +2012,7 @@ MISSION
 				{
 					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
 					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
@@ -2002,7 +2026,7 @@ MISSION
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
 					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
 					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
@@ -2017,7 +2041,7 @@ MISSION
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
 					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
 					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
@@ -2033,7 +2057,7 @@ MISSION
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
 					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
 					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
@@ -2050,7 +2074,7 @@ MISSION
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
 					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
 					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
@@ -2068,7 +2092,7 @@ MISSION
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
 					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
 					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
@@ -2087,7 +2111,7 @@ MISSION
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
 					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
 					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
@@ -2106,7 +2130,7 @@ MISSION
 			}
 			NODE
 			{
-				id = f02c0cd5-89e5-426d-a371-0467600385a6
+				id = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 			}
 			NODE
 			{
