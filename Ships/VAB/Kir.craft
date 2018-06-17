@@ -2,7 +2,7 @@ ship = Kir
 version = 1.4.3
 description = 
 type = VAB
-size = 24.1977501,10.8117409,30.9984188
+size = 25.3216305,10.8117428,30.9984474
 persistentId = 2411549968
 rot = 0,0,0,0
 missionFlag = Squad/Flags/default
@@ -135,7 +135,7 @@ PART
 	part = largeAdapter_4287669496
 	partName = Part
 	persistentId = 4003891511
-	pos = -3.17215586,15,0
+	pos = -3.17215681,15,0
 	attPos = 0,0,0
 	attPos0 = 2.3841848E-07,-1.50999987,0
 	rot = 0,0,0.707106829,0.707106829
@@ -508,6 +508,10 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	link = dockingPortLarge_4293345000
+	link = spotLight1_4286314980
+	link = spotLight1_4286312596
+	link = spotLight1_4286312556
+	link = spotLight1_4286312516
 	attN = top,dockingPortLarge_4293345000_0|0.9375|0
 	attN = bottom,Rockomax64.BW_4287669444_0|-0.9375|0
 	EVENTS
@@ -647,7 +651,7 @@ PART
 	part = Rockomax32.BW_4287669226
 	partName = Part
 	persistentId = 1213129028
-	pos = 0,15,-7.99716663
+	pos = 0,15,-7.99717808
 	attPos = 0,0,0
 	attPos0 = 0,3.72000504,0
 	rot = -0.707106829,0,0,0.707106829
@@ -672,6 +676,12 @@ PART
 	link = RCSBlock_4287645190
 	link = RCSBlock_4287645126
 	link = RCSBlock_4287645062
+	link = batteryBankLarge_4286342154
+	link = spotLight2_4286290704
+	link = spotLight2_4286287140
+	link = spotLight2_4286287104
+	link = spotLight2_4286287068
+	attN = top,batteryBankLarge_4286342154_0|1.86|0
 	attN = bottom,Rockomax32.BW_4287669396_0|-1.86|0
 	EVENTS
 	{
@@ -725,10 +735,10 @@ PART
 	part = trussPiece3x_4287669188
 	partName = Part
 	persistentId = 690596216
-	pos = 1.89977467,16.8997707,-8.80530357
+	pos = 1.89977467,16.8997707,-8.80531693
 	attPos = 0,0,0
 	attPos0 = 1.89977384,0.808136225,1.89977849
-	rot = -2.08616257E-07,2.98023224E-08,-0.382683545,0.923879623
+	rot = -2.08616257E-07,8.94069672E-08,-0.382683486,0.923879623
 	attRot = 0,0,0,1
 	attRot0 = 0.653281331,0.270598084,-0.270598143,0.653281629
 	mir = 1,1,1
@@ -763,10 +773,10 @@ PART
 	part = largeSolarPanel_4287669166
 	partName = Part
 	persistentId = 4264158594
-	pos = 2.68239594,17.6823883,-9.13200569
+	pos = 2.68239641,17.6823883,-9.13201714
 	attPos = 0,0,0
 	attPos0 = -5.36440893E-07,1.1067915,-0.326703727
-	rot = -0.653281808,-0.270598352,-0.653281391,0.270597935
+	rot = -0.653281748,-0.270598292,-0.653281331,0.270597994
 	attRot = 0.707106709,0,0,-0.707106709
 	attRot0 = -0.500000179,-0.500000119,-0.49999994,0.499999791
 	mir = 1,1,1
@@ -835,10 +845,10 @@ PART
 	part = largeSolarPanel_4287669100
 	partName = Part
 	persistentId = 278991818
-	pos = 2.5696516,17.5696449,-8.48053741
+	pos = 2.56965184,17.5696449,-8.48054886
 	attPos = 0,0,0
 	attPos0 = -2.98022709E-08,0.947345376,0.324763358
-	rot = 0.270598233,-0.653281987,-0.270597756,-0.653281391
+	rot = 0.270598233,-0.653281927,-0.270597637,-0.653281331
 	attRot = 0.707106709,0,0,-0.707106709
 	attRot0 = 0.500000179,-0.500000179,-0.499999851,-0.499999911
 	mir = 1,1,1
@@ -945,7 +955,7 @@ PART
 	part = Rockomax32.BW_4287669008
 	partName = Part
 	persistentId = 1809287491
-	pos = 0,15,4.27715731
+	pos = 0,15,4.27715921
 	attPos = 0,0,0
 	attPos0 = 0,-2.61499643,0
 	rot = 0.50000006,0.50000006,0.50000006,0.50000006
@@ -1020,7 +1030,7 @@ PART
 	part = Rockomax32.BW_4287668970
 	partName = Part
 	persistentId = 3945432852
-	pos = -3.97903986E-13,15.000001,7.99718952
+	pos = -7.38964554E-13,15.000001,7.99721432
 	attPos = 0,0,0
 	attPos0 = 0,3.72000504,0
 	rot = 0.50000006,0.50000006,0.50000006,0.50000006
@@ -1045,6 +1055,12 @@ PART
 	link = RCSBlock_4287643930
 	link = RCSBlock_4287643866
 	link = RCSBlock_4287643802
+	link = batteryBankLarge_4286342552
+	link = spotLight2_4286286996
+	link = spotLight2_4286286730
+	link = spotLight2_4286286694
+	link = spotLight2_4286286658
+	attN = top,batteryBankLarge_4286342552_0|1.86|0
 	attN = bottom,Rockomax32.BW_4287669008_0|-1.86|0
 	EVENTS
 	{
@@ -1098,7 +1114,7 @@ PART
 	part = trussPiece3x_4287668932
 	partName = Part
 	persistentId = 3719848366
-	pos = 1.89977109,16.8997765,8.80532265
+	pos = 1.89977109,16.8997765,8.80534744
 	attPos = 0,0,0
 	attPos0 = 1.89977384,0.808136225,1.89977849
 	rot = 0.382683396,0.923879743,1.49011612E-07,1.49011612E-07
@@ -1136,10 +1152,10 @@ PART
 	part = largeSolarPanel_4287668910
 	partName = Part
 	persistentId = 4123336931
-	pos = 2.68238926,17.6823997,9.13202572
+	pos = 2.68238926,17.6823997,9.13205051
 	attPos = 0,0,0
 	attPos0 = -5.36440893E-07,1.1067915,-0.326703727
-	rot = -0.270598233,0.653281271,0.270598114,0.653281987
+	rot = -0.270598233,0.653281152,0.270598054,0.653281987
 	attRot = 0.707106709,0,0,-0.707106709
 	attRot0 = -0.500000179,-0.500000119,-0.49999994,0.499999791
 	mir = 1,1,1
@@ -1208,7 +1224,7 @@ PART
 	part = largeSolarPanel_4287668844
 	partName = Part
 	persistentId = 3188900592
-	pos = 2.56964469,17.5696564,8.4805603
+	pos = 2.56964469,17.5696602,8.4805851
 	attPos = 0,0,0
 	attPos0 = -2.98022709E-08,0.947345376,0.324763358
 	rot = -0.653281391,-0.270598024,-0.653281808,0.270598173
@@ -1280,7 +1296,7 @@ PART
 	part = fuelTank.long_4287668778
 	partName = Part
 	persistentId = 3814566957
-	pos = -5.79716015,15,0
+	pos = -5.79716206,15,0
 	attPos = 0,0,0
 	attPos0 = -2.38418039E-07,2.62499619,0
 	rot = -0.50000006,-0.50000006,-0.50000006,0.50000006
@@ -1301,6 +1317,10 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	link = fuelTank.long_4287668748
+	link = spotLight2_4286305648
+	link = spotLight2_4286285390
+	link = spotLight2_4286285354
+	link = spotLight2_4286285318
 	attN = top,largeAdapter_4287669496_0|1.875|0
 	attN = bottom,fuelTank.long_4287668748_0|-1.8875|0
 	EVENTS
@@ -1340,7 +1360,7 @@ PART
 	part = fuelTank.long_4287668748
 	partName = Part
 	persistentId = 3189091561
-	pos = -9.55967808,15,4.54747351E-13
+	pos = -9.55968761,15,6.82121026E-13
 	attPos = 0,0,0
 	attPos0 = 5.68434121E-14,-3.76250362,-4.7683713E-07
 	rot = -0.50000006,-0.50000006,-0.50000006,0.50000006
@@ -1404,7 +1424,7 @@ PART
 	part = stationHub_4287668718
 	partName = Part
 	persistentId = 1212302660
-	pos = -12.3593435,15,5.68434189E-13
+	pos = -12.3593559,15,7.95807864E-13
 	attPos = 0,0,0
 	attPos0 = 1.13686831E-13,-2.79965901,0
 	rot = 0,0,0,1.00000012
@@ -1426,7 +1446,9 @@ PART
 	modSize = 0,0,0
 	link = solidBooster.sm_4287668680
 	link = solidBooster.sm_4287668602
+	link = avionicsNoseCone_4286545636
 	attN = right,fuelTank.long_4287668748_0.9121535|0|0
+	attN = left,avionicsNoseCone_4286545636_-0.9121535|0|0
 	attN = top,solidBooster.sm_4287668602_0|0.9121535|0
 	attN = bottom,solidBooster.sm_4287668680_0|-0.9121535|0
 	EVENTS
@@ -1444,7 +1466,7 @@ PART
 	part = solidBooster.sm_4287668680
 	partName = Part
 	persistentId = 3332714903
-	pos = -12.3593493,13.400342,2.02655792E-06
+	pos = -12.3593616,13.4003401,2.98023224E-06
 	attPos = 0,0,0
 	attPos0 = -5.7220459E-06,-1.59965444,3.57627869E-07
 	rot = 0,0,0,1.00000012
@@ -1558,7 +1580,7 @@ PART
 	part = solidBooster.sm_4287668602
 	partName = Part
 	persistentId = 2888437037
-	pos = -12.3593493,16.5996552,-2.02655792E-06
+	pos = -12.3593616,16.5996552,-2.98023224E-06
 	attPos = 0,0,0
 	attPos0 = -5.7220459E-06,1.59965348,-3.57627869E-07
 	rot = 0.707106888,0,-0.707106888,0
@@ -2373,10 +2395,10 @@ PART
 	part = RCSBlock_4287650278
 	partName = Part
 	persistentId = 4251949032
-	pos = -10.7906561,15.000742,-0.68010819
+	pos = -10.7906656,15.000742,-0.680108428
 	attPos = 0,0,0
 	attPos0 = -0.68010807,-1.23097754,0.000742018397
-	rot = 0.500000358,0.499999911,0.49999997,-0.5
+	rot = 0.500000417,0.49999994,0.49999994,-0.5
 	attRot = 0,0,0,1
 	attRot0 = 1.89660781E-07,5.96046306E-08,-2.31807633E-07,-1
 	mir = 1,1,1
@@ -2443,10 +2465,10 @@ PART
 	part = RCSBlock_4287649282
 	partName = Part
 	persistentId = 485966383
-	pos = -10.7906561,15.6801081,0.000741481781
+	pos = -10.7906656,15.6801081,0.000741243362
 	attPos = 0,0,0
 	attPos0 = 0.00074156496,-1.23097754,0.68010807
-	rot = 4.21468762E-08,-4.21468762E-08,0.707106769,-0.707107008
+	rot = 4.21468798E-08,-4.21468798E-08,0.707106769,-0.707107008
 	attRot = 0,0,0,1
 	attRot0 = -6.32202486E-08,-0.707106829,-1.47513987E-07,-0.707106829
 	mir = 1,1,1
@@ -2513,10 +2535,10 @@ PART
 	part = RCSBlock_4287649218
 	partName = Part
 	persistentId = 3969211994
-	pos = -10.7906561,14.999259,0.68010819
+	pos = -10.7906656,14.999259,0.680108428
 	attPos = 0,0,0
 	attPos0 = 0.68010807,-1.23097754,-0.000741064723
-	rot = -0.500000238,-0.5,0.499999881,-0.500000119
+	rot = -0.500000298,-0.50000006,0.499999851,-0.50000006
 	attRot = 0,0,0,1
 	attRot0 = -2.31807633E-07,-1,2.10734203E-08,5.96046306E-08
 	mir = 1,1,1
@@ -2583,10 +2605,10 @@ PART
 	part = RCSBlock_4287649154
 	partName = Part
 	persistentId = 1884684116
-	pos = -10.7906561,14.3198919,-0.00074160099
+	pos = -10.7906656,14.3198919,-0.000741362572
 	attPos = 0,0,0
 	attPos0 = -0.000741646043,-1.23097754,-0.68010807
-	rot = -0.707107186,-0.70710659,-4.21468727E-08,-4.21468727E-08
+	rot = -0.707107186,-0.70710659,-4.21468513E-08,-4.21468513E-08
 	attRot = 0,0,0,1
 	attRot0 = -3.16101364E-07,-0.707106829,2.31807633E-07,0.707106829
 	mir = 1,1,1
@@ -2796,7 +2818,7 @@ PART
 	pos = 8.44350243,14.999258,1.28030372
 	attPos = 0,0,0
 	attPos0 = 1.28030372,3.42291689,-0.000741958618
-	rot = -0.5,-0.5,0.49999994,-0.5
+	rot = -0.5,-0.5,0.499999911,-0.50000006
 	attRot = 0,0,0,1
 	attRot0 = -2.98023224E-08,-1,-2.98023224E-08,5.96046448E-08
 	mir = 1,1,1
@@ -2933,10 +2955,10 @@ PART
 	part = RCSBlock_4287646166
 	partName = Part
 	persistentId = 2001358484
-	pos = -1.29123282,15.000742,-7.29836655
+	pos = -1.2912333,15.000742,-7.29837799
 	attPos = 0,0,0
 	attPos0 = -1.29123259,-0.698800325,0.000742077536
-	rot = 0.707106829,-3.41667672E-08,8.50425224E-08,-0.707106829
+	rot = 0.707106829,-5.32451736E-08,6.59641159E-08,-0.707106829
 	attRot = 0,0,0,1
 	attRot0 = 3.59745904E-08,-5.96046448E-08,3.59745904E-08,-1
 	mir = 1,1,1
@@ -3003,7 +3025,7 @@ PART
 	part = RCSBlock_4287645190
 	partName = Part
 	persistentId = 3247473929
-	pos = 0.0007417202,16.2912331,-7.29836655
+	pos = 0.0007417202,16.2912331,-7.29837799
 	attPos = 0,0,0
 	attPos0 = 0.000741839409,-0.698800325,1.29123259
 	rot = 0.500000119,-0.5,0.500000119,-0.5
@@ -3073,10 +3095,10 @@ PART
 	part = RCSBlock_4287645126
 	partName = Part
 	persistentId = 4151493731
-	pos = 1.29123282,14.999258,-7.29836655
+	pos = 1.2912333,14.999258,-7.29837799
 	attPos = 0,0,0
 	attPos0 = 1.29123259,-0.698800325,-0.000742077536
-	rot = -8.94069672E-08,-0.707106829,0.707106829,1.37473151E-07
+	rot = -1.1920929E-07,-0.707106829,0.707106829,1.20350776E-07
 	attRot = 0,0,0,1
 	attRot0 = 2.58290065E-08,-1,5.84646855E-08,1.49011598E-07
 	mir = 1,1,1
@@ -3143,7 +3165,7 @@ PART
 	part = RCSBlock_4287645062
 	partName = Part
 	persistentId = 3607646513
-	pos = -0.0007417202,13.7087669,-7.29836655
+	pos = -0.0007417202,13.7087669,-7.29837799
 	attPos = 0,0,0
 	attPos0 = -0.000741839409,-0.698800325,-1.29123259
 	rot = -0.50000006,-0.50000006,0.50000006,0.50000006
@@ -3213,10 +3235,10 @@ PART
 	part = RCSBlock_4287644954
 	partName = Part
 	persistentId = 4160192318
-	pos = -1.3006072,14.999259,6.49981642
+	pos = -1.30060768,14.999259,6.49983835
 	attPos = 0,0,0
 	attPos0 = -0.000741362572,-1.49737191,-1.30060697
-	rot = 0.707106948,-1.6858742E-07,1.6858742E-07,0.707106829
+	rot = 0.707106948,-1.68587462E-07,1.68587462E-07,0.707106829
 	attRot = 0,0,0,1
 	attRot0 = -1.26440554E-07,-0.707106829,2.10734257E-07,0.707106829
 	mir = 1,1,1
@@ -3283,7 +3305,7 @@ PART
 	part = RCSBlock_4287643930
 	partName = Part
 	persistentId = 2014428175
-	pos = 0.000742435572,13.6993942,6.49981594
+	pos = 0.000742912409,13.6993942,6.49983788
 	attPos = 0,0,0
 	attPos0 = -1.30060613,-1.49737239,0.00074231613
 	rot = 0.500000179,0.499999821,0.500000298,0.499999911
@@ -3353,7 +3375,7 @@ PART
 	part = RCSBlock_4287643866
 	partName = Part
 	persistentId = 3676104722
-	pos = 1.3006072,15.0007439,6.49981642
+	pos = 1.30060768,15.0007439,6.49983835
 	attPos = 0,0,0
 	attPos0 = 0.00074326992,-1.49737191,1.30060697
 	rot = 8.42937027E-08,0.707106709,0.707107067,-2.52881108E-07
@@ -3423,7 +3445,7 @@ PART
 	part = RCSBlock_4287643802
 	partName = Part
 	persistentId = 2154748526
-	pos = -0.00074267399,16.3006077,6.49981689
+	pos = -0.000743150827,16.3006077,6.49983883
 	attPos = 0,0,0
 	attPos0 = 1.30060709,-1.49737144,-0.000742554548
 	rot = -0.49999994,0.50000006,0.50000006,-0.500000179
@@ -3478,6 +3500,1371 @@ PART
 		ACTIONS
 		{
 			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = avionicsNoseCone_4286545636
+	partName = Part
+	persistentId = 3539928907
+	pos = -13.5215197,15,9.09494702E-13
+	attPos = 0,0,0
+	attPos0 = -1.16216087,0,1.13686838E-13
+	rot = -0.50000006,0.50000006,-0.50000006,-0.50000006
+	attRot = -0.49999994,0.49999994,-0.49999994,-0.49999994
+	attRot0 = -0.5,0.5,-0.5,-0.5
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = bottom,stationHub_4287668718_0|-0.25|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleSAS
+		isEnabled = True
+		standaloneToggle = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleKerbNetAccess
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OpenKerbNetAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = batteryBankLarge_4286342552
+	partName = Part
+	persistentId = 2549519447
+	pos = -7.95807972E-13,15.000001,9.9672184
+	attPos = 0,0,0
+	attPos0 = 0,1.97000313,-5.68434189E-14
+	rot = -0.707106888,0,0,0.707106888
+	attRot = -0.707106709,0,0,0.707106709
+	attRot0 = -0.707106829,0,-0.707106829,0
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = top,Rockomax32.BW_4287668970_0|0.11|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 4000
+		maxAmount = 4000
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = batteryBankLarge_4286342154
+	partName = Part
+	persistentId = 1838339840
+	pos = 0,15,-9.98218155
+	attPos = 0,0,0
+	attPos0 = 0,1.98500252,0
+	rot = -0.707106829,0,0,0.707106829
+	attRot = -0.707106709,0,0,0.707106709
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = bottom,Rockomax32.BW_4287669226_0|-0.125|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 4000
+		maxAmount = 4000
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = spotLight1_4286314980
+	partName = Part
+	persistentId = 2817651213
+	pos = 9.01896381,16.4059696,1.1920929E-07
+	attPos = 0,0,0
+	attPos0 = -1.41716146,-0.704759359,0
+	rot = 0.409888089,-0.576187372,0.409888029,0.576187253
+	attRot = 4.35129799E-09,0.0871556178,-0.996194661,-2.38722642E-08
+	attRot0 = 0.697260618,-0.117591336,0.697260499,0.117591336
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = spotLight1_4286312596
+	sym = spotLight1_4286312556
+	sym = spotLight1_4286312516
+	srfN = srfAttach,Size1p5.Size2.Adapter.01_4287669298
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = True
+		uiWriteLock = False
+		lightR = 1
+		lightG = 1
+		lightB = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOffAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = spotLight1_4286312596
+	partName = Part
+	persistentId = 103907793
+	pos = 9.01896381,15,1.40596974
+	attPos = 0,0,0
+	attPos0 = -1.1920924E-07,-0.704759359,1.41716182
+	rot = 0.697260618,-0.697260737,-0.117591359,0.117591232
+	attRot = 4.35129799E-09,0.0871556178,-0.996194661,-2.38722642E-08
+	attRot0 = -0.996816993,8.19563866E-08,8.94069672E-08,-0.0797243938
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = spotLight1_4286314980
+	sym = spotLight1_4286312556
+	sym = spotLight1_4286312516
+	srfN = srfAttach,Size1p5.Size2.Adapter.01_4287669298
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = True
+		uiWriteLock = False
+		lightR = 1
+		lightG = 1
+		lightB = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOffAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = spotLight1_4286312556
+	partName = Part
+	persistentId = 130088324
+	pos = 9.01896381,13.5940304,-2.38418579E-07
+	attPos = 0,0,0
+	attPos0 = 1.41716146,-0.704759359,-1.19209275E-07
+	rot = 0.576187253,-0.409888089,-0.576187313,-0.409888148
+	attRot = 4.35129799E-09,0.0871556178,-0.996194661,-2.38722642E-08
+	attRot0 = -0.704855978,-0.0563736074,0.704856098,-0.0563736074
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = spotLight1_4286314980
+	sym = spotLight1_4286312596
+	sym = spotLight1_4286312516
+	srfN = srfAttach,Size1p5.Size2.Adapter.01_4287669298
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = True
+		uiWriteLock = False
+		lightR = 1
+		lightG = 1
+		lightB = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOffAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = spotLight1_4286312516
+	partName = Part
+	persistentId = 3663610610
+	pos = 9.01896381,15,-1.40596974
+	attPos = 0,0,0
+	attPos0 = 1.1920924E-07,-0.704759359,-1.41716182
+	rot = 0.117591247,0.117591359,-0.697260618,-0.697260737
+	attRot = 4.35129799E-09,0.0871556178,-0.996194661,-2.38722642E-08
+	attRot0 = 8.94069672E-08,-0.0797243863,0.996816993,-3.7252903E-09
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = spotLight1_4286314980
+	sym = spotLight1_4286312596
+	sym = spotLight1_4286312556
+	srfN = srfAttach,Size1p5.Size2.Adapter.01_4287669298
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = True
+		uiWriteLock = False
+		lightR = 1
+		lightG = 1
+		lightB = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOffAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = spotLight2_4286290704
+	partName = Part
+	persistentId = 3936892817
+	pos = -0.383258224,16.4303398,-9.5891552
+	attPos = 0,0,0
+	attPos0 = -0.383257985,1.59197521,1.43033946
+	rot = 0.0922957808,-0.701057374,0.701057613,-0.092295751
+	attRot = 0,0,0,-0.999999881
+	attRot0 = 2.63418087E-09,-0.991444945,2.08100076E-07,-0.130525917
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = spotLight2_4286287140
+	sym = spotLight2_4286287104
+	sym = spotLight2_4286287068
+	srfN = srfAttach,Rockomax32.BW_4287669226
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = True
+		uiWriteLock = False
+		lightR = 0
+		lightG = 1
+		lightB = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOffAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = spotLight2_4286287140
+	partName = Part
+	persistentId = 3904513470
+	pos = 1.43033981,15.3832579,-9.5891552
+	attPos = 0,0,0
+	attPos0 = 1.43033969,1.59197521,0.383257598
+	rot = -0.43045944,-0.560985327,0.560985684,0.430459559
+	attRot = 0,0,0,-0.999999881
+	attRot0 = 8.42937027E-08,-0.79335326,1.68587405E-07,0.608761609
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = spotLight2_4286290704
+	sym = spotLight2_4286287104
+	sym = spotLight2_4286287068
+	srfN = srfAttach,Rockomax32.BW_4287669226
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = True
+		uiWriteLock = False
+		lightR = 0
+		lightG = 1
+		lightB = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOffAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = spotLight2_4286287104
+	partName = Part
+	persistentId = 3711862662
+	pos = 0.383258224,13.5696602,-9.5891552
+	attPos = 0,0,0
+	attPos0 = 0.383257985,1.59197521,-1.43033946
+	rot = -0.701057374,-0.0922957584,0.0922957733,0.701057613
+	attRot = 0,0,0,-0.999999881
+	attRot0 = 1.36977263E-07,-0.130525947,1.05367164E-08,0.991444945
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = spotLight2_4286290704
+	sym = spotLight2_4286287140
+	sym = spotLight2_4286287068
+	srfN = srfAttach,Rockomax32.BW_4287669226
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = True
+		uiWriteLock = False
+		lightR = 0
+		lightG = 1
+		lightB = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOffAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = spotLight2_4286287068
+	partName = Part
+	persistentId = 2316456678
+	pos = -1.43033981,14.6167431,-9.5891552
+	attPos = 0,0,0
+	attPos0 = -1.43033969,1.59197521,-0.383257598
+	rot = -0.560985446,0.43045938,-0.430459619,0.560985565
+	attRot = 0,0,0,-0.999999881
+	attRot0 = 8.42937027E-08,0.608761609,-1.26440554E-07,0.79335326
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = spotLight2_4286290704
+	sym = spotLight2_4286287140
+	sym = spotLight2_4286287104
+	srfN = srfAttach,Rockomax32.BW_4287669226
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = True
+		uiWriteLock = False
+		lightR = 0
+		lightG = 1
+		lightB = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOffAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = spotLight2_4286286996
+	partName = Part
+	persistentId = 2200927062
+	pos = -1.49326468,15.0000019,9.58215046
+	attPos = 0,0,0
+	attPos0 = 1.19209332E-07,1.58493471,-1.49326444
+	rot = -0.50000006,-0.499999911,-0.500000179,-0.50000006
+	attRot = 0,0,0,-0.999999881
+	attRot0 = 1.68587391E-07,0,-1.26440554E-07,-1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = spotLight2_4286286730
+	sym = spotLight2_4286286694
+	sym = spotLight2_4286286658
+	srfN = srfAttach,Rockomax32.BW_4287668970
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = True
+		uiWriteLock = False
+		lightR = 1
+		lightG = 0
+		lightB = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOffAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = spotLight2_4286286730
+	partName = Part
+	persistentId = 3177413730
+	pos = -2.38418579E-07,13.5067368,9.58215046
+	attPos = 0,0,0
+	attPos0 = -1.49326408,1.58493471,-3.57627101E-07
+	rot = -8.42937311E-08,-0.70710665,-0.707107127,-8.42936743E-08
+	attRot = 0,0,0,-0.999999881
+	attRot0 = 2.31807633E-07,-0.707106769,-2.31807689E-07,-0.707106888
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = spotLight2_4286286996
+	sym = spotLight2_4286286694
+	sym = spotLight2_4286286658
+	srfN = srfAttach,Rockomax32.BW_4287668970
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = True
+		uiWriteLock = False
+		lightR = 1
+		lightG = 0
+		lightB = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOffAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = spotLight2_4286286694
+	partName = Part
+	persistentId = 791377083
+	pos = 1.49326468,15,9.58215046
+	attPos = 0,0,0
+	attPos0 = -1.07288349E-06,1.58493471,1.49326444
+	rot = 0.50000006,-0.499999881,-0.500000238,0.50000006
+	attRot = 0,0,0,-0.999999881
+	attRot0 = 1.47513973E-07,-1,-1.89660796E-07,0
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = spotLight2_4286286996
+	sym = spotLight2_4286286730
+	sym = spotLight2_4286286658
+	srfN = srfAttach,Rockomax32.BW_4287668970
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = True
+		uiWriteLock = False
+		lightR = 1
+		lightG = 0
+		lightB = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOffAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = spotLight2_4286286658
+	partName = Part
+	persistentId = 3146485368
+	pos = 1.42108547E-14,16.4932652,9.58215046
+	attPos = 0,0,0
+	attPos0 = 1.49326408,1.58493471,1.19209986E-07
+	rot = 0.707106829,-8.42937169E-08,-8.42936885E-08,0.707106948
+	attRot = 0,0,0,-0.999999881
+	attRot0 = -6.32202912E-08,-0.707106888,-6.32202628E-08,0.707106769
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = spotLight2_4286286996
+	sym = spotLight2_4286286730
+	sym = spotLight2_4286286694
+	srfN = srfAttach,Rockomax32.BW_4287668970
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = True
+		uiWriteLock = False
+		lightR = 1
+		lightG = 0
+		lightB = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOffAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = spotLight2_4286305648
+	partName = Part
+	persistentId = 1033101264
+	pos = -4.45978737,15.8883324,-4.76837158E-07
+	attPos = 0,0,0
+	attPos0 = -3.31003974E-07,1.33737373,0.888331771
+	rot = -0.50000006,-0.50000006,0.50000006,-0.50000006
+	attRot = 0,0,0,0.999999881
+	attRot0 = 0,-1,0,0
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = spotLight2_4286285390
+	sym = spotLight2_4286285354
+	sym = spotLight2_4286285318
+	srfN = srfAttach,fuelTank.long_4287668778
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = True
+		uiWriteLock = False
+		lightR = 0.600000024
+		lightG = 0.600000024
+		lightB = 0.600000024
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOffAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = spotLight2_4286285390
+	partName = Part
+	persistentId = 1937357149
+	pos = -4.45978737,15,0.88833189
+	attPos = 0,0,0
+	attPos0 = 0.888331652,1.33737373,1.19209318E-07
+	rot = -0.707106948,-0.707106829,-8.42936956E-08,-8.42936956E-08
+	attRot = 0,0,0,0.999999881
+	attRot0 = -1.47513958E-07,-0.707106829,-2.10734115E-08,0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = spotLight2_4286305648
+	sym = spotLight2_4286285354
+	sym = spotLight2_4286285318
+	srfN = srfAttach,fuelTank.long_4287668778
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = True
+		uiWriteLock = False
+		lightR = 0.600000024
+		lightG = 0.600000024
+		lightB = 0.600000024
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOffAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = spotLight2_4286285354
+	partName = Part
+	persistentId = 640883874
+	pos = -4.45978832,14.1116676,3.57627869E-07
+	attPos = 0,0,0
+	attPos0 = 2.53343529E-07,1.33737326,-0.888332248
+	rot = -0.500000179,-0.499999911,-0.500000179,0.49999994
+	attRot = 0,0,0,0.999999881
+	attRot0 = -2.5288108E-07,0,4.21468549E-08,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = spotLight2_4286305648
+	sym = spotLight2_4286285390
+	sym = spotLight2_4286285318
+	srfN = srfAttach,fuelTank.long_4287668778
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = True
+		uiWriteLock = False
+		lightR = 0.600000024
+		lightG = 0.600000024
+		lightB = 0.600000024
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOffAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = spotLight2_4286285318
+	partName = Part
+	persistentId = 429594798
+	pos = -4.45978737,14.999999,-0.88833189
+	attPos = 0,0,0
+	attPos0 = -0.888331652,1.33737373,-5.96046561E-07
+	rot = -8.42936956E-08,8.42936956E-08,-0.707106948,0.707106829
+	attRot = 0,0,0,0.999999881
+	attRot0 = -1.47513958E-07,0.707106829,2.10734115E-08,0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = spotLight2_4286305648
+	sym = spotLight2_4286285390
+	sym = spotLight2_4286285354
+	srfN = srfAttach,fuelTank.long_4287668778
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = True
+		uiWriteLock = False
+		lightR = 0.600000024
+		lightG = 0.600000024
+		lightB = 0.600000024
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LightOffAction
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
