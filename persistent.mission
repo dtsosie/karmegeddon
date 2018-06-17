@@ -15,7 +15,7 @@ MISSION
 	bannerFail = fail01.png
 	isScoreEnabled = True
 	maxScore = 0
-	historyId = bd8474e3-9acb-4a3e-a565-985b7cae4b44
+	historyId = dd062dc0-9bec-4360-a03e-f3ded69efec9
 	activeNodeID = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 	currentScore = 0
 	exportName = 
@@ -398,10 +398,6 @@ MISSION
 			score = 0
 			resourceName = LiquidFuel
 			resourceAmount = 0
-			PROGRESS
-			{
-				totalSpentResource = 0
-			}
 		}
 		AWARDMODULE
 		{
@@ -410,10 +406,6 @@ MISSION
 			awardID = KerbalsSurvived
 			enabled = False
 			score = 0
-			PROGRESS
-			{
-				kerbalsAreAlive = True
-			}
 		}
 		AWARDMODULE
 		{
@@ -431,10 +423,6 @@ MISSION
 			enabled = False
 			score = 0
 			distance = 0
-			PROGRESS
-			{
-				distanceTraveled = 0
-			}
 		}
 		AWARDMODULE
 		{
@@ -444,10 +432,6 @@ MISSION
 			enabled = False
 			score = 0
 			distance = 0
-			PROGRESS
-			{
-				distanceTraveled = 0
-			}
 		}
 		AWARDMODULE
 		{
@@ -457,9 +441,6 @@ MISSION
 			enabled = False
 			score = 0
 			vesselsUsed = 0
-			PROGRESS
-			{
-			}
 		}
 		AWARDMODULE
 		{
@@ -479,9 +460,6 @@ MISSION
 			enabled = False
 			score = 0
 			planetsLanded = 0
-			PROGRESS
-			{
-			}
 		}
 		AWARDMODULE
 		{
@@ -518,7 +496,7 @@ MISSION
 			category = Start
 			showScreenMessage = False
 			msgTime = 5
-			editorPosition = 150,136
+			editorPosition = -110,136
 			isStartNode = True
 			isEndNode = False
 			message = 
@@ -535,6 +513,7 @@ MISSION
 			TONODEIDS
 			{
 				nodeID = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+				nodeID = af064865-4849-4e03-a8d8-a113c5c30ed2
 			}
 			NODEBODY_PARAMETERS
 			{
@@ -628,7 +607,7 @@ MISSION
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 117.07571054966728
+								editorRotation = 293.30465019574615
 							}
 						}
 						PARTCREW
@@ -721,12 +700,12 @@ MISSION
 								SMA = 690000.5
 								ECC = 9.9999999739376724E-07
 								INC = 0
-								LPE = 120
+								LPE = 0
 								LAN = 0
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 117.07571054966728
+								editorRotation = 293.30465019574615
 							}
 						}
 						PARTCREW
@@ -755,7 +734,7 @@ MISSION
 			category = Utility
 			showScreenMessage = False
 			msgTime = 5
-			editorPosition = 466.560547,141.333984
+			editorPosition = 332.274902,141.333984
 			isStartNode = False
 			isEndNode = False
 			message = 
@@ -776,10 +755,6 @@ MISSION
 					nodeID = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 					connectorColor = #FFFFFF
 				}
-			}
-			TONODEIDS
-			{
-				nodeID = af064865-4849-4e03-a8d8-a113c5c30ed2
 			}
 			TESTGROUPS
 			{
@@ -804,7 +779,7 @@ MISSION
 					instructorName = Instructor_Gene
 					vintageSuit = False
 					textAreaSize = 135
-					pauseMission = True
+					pauseMission = False
 					screenArea = Right
 					autoClose = False
 					autoCloseTimeOut = 20
@@ -829,7 +804,7 @@ MISSION
 			category = Location
 			showScreenMessage = False
 			msgTime = 5
-			editorPosition = 463.060547,-0.165039063
+			editorPosition = 334.489258,36.9775391
 			isStartNode = False
 			isEndNode = False
 			message = 
@@ -847,7 +822,7 @@ MISSION
 			{
 				FROMNODE
 				{
-					nodeID = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+					nodeID = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 					connectorColor = #FFFFFF
 				}
 			}
@@ -928,7 +903,7 @@ MISSION
 			category = Utility
 			showScreenMessage = False
 			msgTime = 5
-			editorPosition = 470.200195,-234.290527
+			editorPosition = 735.914551,131.423828
 			isStartNode = False
 			isEndNode = False
 			message = 
@@ -1001,7 +976,7 @@ MISSION
 			category = Vessel
 			showScreenMessage = False
 			msgTime = 5
-			editorPosition = 828.560547,138.66748
+			editorPosition = 739.989258,-12.7612305
 			isStartNode = False
 			isEndNode = False
 			message = 
@@ -1025,7 +1000,7 @@ MISSION
 			}
 			TONODEIDS
 			{
-				nodeID = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
+				nodeID = aeb04335-86f9-49e1-a396-518e040aacae
 			}
 			TESTGROUPS
 			{
@@ -1076,99 +1051,13 @@ MISSION
 		}
 		NODE
 		{
-			title = Resource Drain
-			id = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
-			description = Change amount of resource in a part over time
-			category = Vessel
-			showScreenMessage = False
-			msgTime = 5
-			editorPosition = 833.560059,-62.3325195
-			isStartNode = False
-			isEndNode = False
-			message = 
-			isObjective = False
-			isCatchAll = False
-			isEvent = False
-			activateOnceOnly = True
-			activatedUT = 0
-			isLogicNode = False
-			basicNodeSource = ActionPartResourceDrain
-			basicNodeIconURL = action-part-resource-drain
-			nodeColor = #3F8CED
-			missionEndOptions = Success
-			FROMNODES
-			{
-				FROMNODE
-				{
-					nodeID = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					connectorColor = #FFFFFF
-				}
-			}
-			TONODEIDS
-			{
-				nodeID = aeb04335-86f9-49e1-a396-518e040aacae
-			}
-			TESTGROUPS
-			{
-				TESTGROUP
-				{
-					title = 
-				}
-			}
-			ACTIONS
-			{
-				ACTIONMODULE
-				{
-					name = ActionPartResourceDrain
-					title = Resource Drain
-					parametersDisplayedInSAP = timePeriod
-					parametersDisplayedInSAP = amountToDrain
-					parametersDisplayedInSAP = vesselPartIDs
-					parametersDisplayedInSAP = resourceName
-					restartOnSceneLoad = True
-					isRunning = False
-					timePeriod = 0
-					amountToDrain = -100
-					resourceName = 
-					leftToDrain = 0
-					partPersistentId = 0
-					vesselPersistentId = 1574579380
-					partName = Any
-				}
-			}
-			NODEBODY_PARAMETERS
-			{
-				MODULE_PARAMETER
-				{
-					module = ActionPartResourceDrain
-					parameter = timePeriod
-				}
-				MODULE_PARAMETER
-				{
-					module = ActionPartResourceDrain
-					parameter = amountToDrain
-				}
-				MODULE_PARAMETER
-				{
-					module = ActionPartResourceDrain
-					parameter = vesselPartIDs
-				}
-				MODULE_PARAMETER
-				{
-					module = ActionPartResourceDrain
-					parameter = resourceName
-				}
-			}
-		}
-		NODE
-		{
 			title = Part Docking / Undocking
 			id = aeb04335-86f9-49e1-a396-518e040aacae
 			description = Test whether two parts are docked in the same vessel or not
 			category = Vessel
 			showScreenMessage = False
 			msgTime = 5
-			editorPosition = 840.560547,-291.332031
+			editorPosition = 741.98877,-223.831543
 			isStartNode = False
 			isEndNode = False
 			message = 
@@ -1186,7 +1075,7 @@ MISSION
 			{
 				FROMNODE
 				{
-					nodeID = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
+					nodeID = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 					connectorColor = #FFFFFF
 				}
 			}
@@ -1346,7 +1235,7 @@ MISSION
 			}
 			TONODEIDS
 			{
-				nodeID = d281710e-2f17-4e42-b30a-123e05002e8f
+				nodeID = dae66e5b-288c-4770-9f93-ac7a3a9eab70
 			}
 			TESTGROUPS
 			{
@@ -1476,7 +1365,7 @@ MISSION
 			category = Utility
 			showScreenMessage = False
 			msgTime = 5
-			editorPosition = 1804.36743,133.210938
+			editorPosition = 1515.7959,136.068359
 			isStartNode = False
 			isEndNode = False
 			message = 
@@ -1494,7 +1383,7 @@ MISSION
 			{
 				FROMNODE
 				{
-					nodeID = 699bc6da-ad41-4236-9f9d-90e67cf001e7
+					nodeID = 3541add6-5cc1-458e-9096-20c2782a7da6
 					connectorColor = #FFFFFF
 				}
 			}
@@ -1549,7 +1438,7 @@ MISSION
 			category = Location
 			showScreenMessage = False
 			msgTime = 5
-			editorPosition = 1811.86743,8.20947266
+			editorPosition = 1514.72437,8.20947266
 			isStartNode = False
 			isEndNode = True
 			message = 
@@ -1619,161 +1508,6 @@ MISSION
 				}
 			}
 		}
-		NODE
-		{
-			title = Dialog Message
-			id = d281710e-2f17-4e42-b30a-123e05002e8f
-			description = Display a message in a dialog box
-			category = Utility
-			showScreenMessage = False
-			msgTime = 5
-			editorPosition = 1486.86743,132.375977
-			isStartNode = False
-			isEndNode = False
-			message = 
-			isObjective = False
-			isCatchAll = False
-			isEvent = False
-			activateOnceOnly = True
-			activatedUT = 0
-			isLogicNode = False
-			basicNodeSource = DialogMessage
-			basicNodeIconURL = dialog-message
-			nodeColor = #F68834
-			missionEndOptions = Success
-			FROMNODES
-			{
-				FROMNODE
-				{
-					nodeID = 3541add6-5cc1-458e-9096-20c2782a7da6
-					connectorColor = #FFFFFF
-				}
-			}
-			TONODEIDS
-			{
-				nodeID = 699bc6da-ad41-4236-9f9d-90e67cf001e7
-			}
-			TESTGROUPS
-			{
-				TESTGROUP
-				{
-					title = 
-				}
-			}
-			ACTIONS
-			{
-				ACTIONMODULE
-				{
-					name = ActionDialogMessage
-					title = Dialog Message
-					parametersDisplayedInSAP = messageHeading
-					parametersDisplayedInSAP = message
-					parametersDisplayedInSAP = missionInstructor
-					restartOnSceneLoad = False
-					isRunning = False
-					message = We need to get near the asteroid and land the Karmadillo onto it.
-					instructorName = Instructor_Gene
-					vintageSuit = False
-					textAreaSize = 135
-					pauseMission = False
-					screenArea = Center
-					autoClose = False
-					autoCloseTimeOut = 20
-					isBriefingMessage = False
-					autoGrowDialogHeight = False
-				}
-			}
-			NODEBODY_PARAMETERS
-			{
-				MODULE_PARAMETER
-				{
-					module = ActionDialogMessage
-					parameter = missionInstructor
-				}
-			}
-		}
-		NODE
-		{
-			title = Landed Vessel
-			id = 699bc6da-ad41-4236-9f9d-90e67cf001e7
-			description = Check if a vessel is landed
-			category = Location
-			showScreenMessage = False
-			msgTime = 5
-			editorPosition = 1489.36743,14.8759766
-			isStartNode = False
-			isEndNode = False
-			message = 
-			isObjective = True
-			isCatchAll = False
-			isEvent = False
-			activateOnceOnly = True
-			activatedUT = 0
-			isLogicNode = False
-			basicNodeSource = Landed
-			basicNodeIconURL = vessel-landed
-			nodeColor = #73D2D6
-			missionEndOptions = Success
-			FROMNODES
-			{
-				FROMNODE
-				{
-					nodeID = d281710e-2f17-4e42-b30a-123e05002e8f
-					connectorColor = #FFFFFF
-				}
-			}
-			TONODEIDS
-			{
-				nodeID = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-			}
-			TESTGROUPS
-			{
-				TESTGROUP
-				{
-					title = 
-					TESTMODULE
-					{
-						name = TestVesselSituationLanded
-						title = Landed Vessel
-						parametersDisplayedInSAP = locationSituation
-						parametersDisplayedInSAP = vesselID
-						vesselID = 0
-						stabilizationTime = 1
-						locationChoice = bodyData
-						surfaceVelocity = 0.10000000149011612
-						BODYDATA
-						{
-							bodyName = AnyValid
-						}
-						BIOMEDATA
-						{
-							bodyName = Kerbin
-						}
-						GROUNDAREA
-						{
-							bodyName = Kerbin
-							lat = 0
-							lon = 0
-							alt = 0
-							radius = 150000
-						}
-					}
-				}
-			}
-			NODEBODY_PARAMETERS
-			{
-				MODULE_PARAMETER
-				{
-					module = TestVesselSituationLanded
-					parameter = locationSituation
-				}
-				MODULE_PARAMETER
-				{
-					module = TestVesselSituationLanded
-					parameter = vesselID
-				}
-			}
-		}
 	}
 	TAGS
 	{
@@ -1782,6 +1516,10 @@ MISSION
 	{
 		FORWARDPATHS
 		{
+			PATHINFO
+			{
+				startNodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+			}
 			PATHINFO
 			{
 				startNodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
@@ -1796,30 +1534,9 @@ MISSION
 			}
 			PATHINFO
 			{
-				startNodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
-				PATH
-				{
-					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = d281710e-2f17-4e42-b30a-123e05002e8f
-				PATH
-				{
-					nodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
-					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
-				}
-			}
-			PATHINFO
-			{
 				startNodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
 				PATH
 				{
-					nodeId = d281710e-2f17-4e42-b30a-123e05002e8f
-					nodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
 					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
 					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
 				}
@@ -1830,8 +1547,6 @@ MISSION
 				PATH
 				{
 					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = d281710e-2f17-4e42-b30a-123e05002e8f
-					nodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
 					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
 					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
 				}
@@ -1843,22 +1558,6 @@ MISSION
 				{
 					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
 					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = d281710e-2f17-4e42-b30a-123e05002e8f
-					nodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
-					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
-				PATH
-				{
-					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
-					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
-					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = d281710e-2f17-4e42-b30a-123e05002e8f
-					nodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
 					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
 					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
 				}
@@ -1868,12 +1567,9 @@ MISSION
 				startNodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 				PATH
 				{
-					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
 					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
 					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = d281710e-2f17-4e42-b30a-123e05002e8f
-					nodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
 					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
 					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
 				}
@@ -1884,12 +1580,9 @@ MISSION
 				PATH
 				{
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
 					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
 					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = d281710e-2f17-4e42-b30a-123e05002e8f
-					nodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
 					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
 					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
 				}
@@ -1901,30 +1594,9 @@ MISSION
 				{
 					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
 					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
 					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = d281710e-2f17-4e42-b30a-123e05002e8f
-					nodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
-					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-				PATH
-				{
-					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
-					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
-					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
-					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
-					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = d281710e-2f17-4e42-b30a-123e05002e8f
-					nodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
 					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
 					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
 				}
@@ -1935,15 +1607,15 @@ MISSION
 				PATH
 				{
 					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+				}
+				PATH
+				{
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
 					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
 					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
 					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = d281710e-2f17-4e42-b30a-123e05002e8f
-					nodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
 					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
 					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
 				}
@@ -1968,7 +1640,6 @@ MISSION
 				startNodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
 				PATH
 				{
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 				}
 			}
@@ -1978,7 +1649,6 @@ MISSION
 				PATH
 				{
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 				}
 			}
@@ -1989,19 +1659,6 @@ MISSION
 				{
 					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
-				PATH
-				{
-					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
-					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 				}
 			}
@@ -2010,11 +1667,9 @@ MISSION
 				startNodeId = aeb04335-86f9-49e1-a396-518e040aacae
 				PATH
 				{
-					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 				}
 			}
@@ -2024,11 +1679,9 @@ MISSION
 				PATH
 				{
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
-					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 				}
 			}
@@ -2039,44 +1692,9 @@ MISSION
 				{
 					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
-					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = d281710e-2f17-4e42-b30a-123e05002e8f
-				PATH
-				{
-					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
-					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
-					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
-					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
-					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
-				PATH
-				{
-					nodeId = d281710e-2f17-4e42-b30a-123e05002e8f
-					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
-					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
-					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
-					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
-					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 				}
 			}
@@ -2085,16 +1703,12 @@ MISSION
 				startNodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
 				PATH
 				{
-					nodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
-					nodeId = d281710e-2f17-4e42-b30a-123e05002e8f
 					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
 					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
-					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 				}
 			}
@@ -2104,76 +1718,69 @@ MISSION
 				PATH
 				{
 					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-					nodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
-					nodeId = d281710e-2f17-4e42-b30a-123e05002e8f
 					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
 					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
-					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 				}
 			}
 		}
 		BLOCKS
 		{
-			NODE
+			OR
 			{
-				id = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-			}
-			NODE
-			{
-				id = af064865-4849-4e03-a8d8-a113c5c30ed2
-			}
-			NODE
-			{
-				id = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
-			}
-			NODE
-			{
-				id = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-			}
-			NODE
-			{
-				id = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
-			}
-			NODE
-			{
-				id = aeb04335-86f9-49e1-a396-518e040aacae
-			}
-			NODE
-			{
-				id = e5888587-a092-4ae2-8eec-ce9d206f9b0d
-			}
-			NODE
-			{
-				id = 3541add6-5cc1-458e-9096-20c2782a7da6
-			}
-			NODE
-			{
-				id = d281710e-2f17-4e42-b30a-123e05002e8f
-			}
-			NODE
-			{
-				id = 699bc6da-ad41-4236-9f9d-90e67cf001e7
-			}
-			NODE
-			{
-				id = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-			}
-			NODE
-			{
-				id = 305df3cd-9acb-4864-a649-b550d12ac06b
+				THEN
+				{
+					NODE
+					{
+						id = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+					}
+				}
+				THEN
+				{
+					NODE
+					{
+						id = af064865-4849-4e03-a8d8-a113c5c30ed2
+					}
+					NODE
+					{
+						id = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
+					}
+					NODE
+					{
+						id = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+					}
+					NODE
+					{
+						id = aeb04335-86f9-49e1-a396-518e040aacae
+					}
+					NODE
+					{
+						id = e5888587-a092-4ae2-8eec-ce9d206f9b0d
+					}
+					NODE
+					{
+						id = 3541add6-5cc1-458e-9096-20c2782a7da6
+					}
+					NODE
+					{
+						id = dae66e5b-288c-4770-9f93-ac7a3a9eab70
+					}
+					NODE
+					{
+						id = 305df3cd-9acb-4864-a649-b550d12ac06b
+					}
+				}
 			}
 		}
 	}
 }
 EDITOR_STATUS
 {
-	canvasPosition = 2920.18555,-3389.90039
-	zoomLevel = 0.799999952
+	canvasPosition = 2158.80566,-2891.16211
+	zoomLevel = 0.699999928
 	canvasSize = 10000,10000
 }

@@ -2,7 +2,7 @@ ship = X-71 Mated
 version = 1.4.3
 description = 
 type = VAB
-size = 13.2000008,20.4271164,11.4813614
+size = 13.2000008,20.4980698,11.4813633
 persistentId = 4228181393
 rot = 0,0,0,0
 missionFlag = Squad/Flags/default
@@ -2326,7 +2326,7 @@ PART
 	istg = 4
 	resPri = 0
 	dstg = 1
-	sidx = 1
+	sidx = 0
 	sqor = 4
 	sepI = 4
 	attm = 1
@@ -2418,7 +2418,7 @@ PART
 	part = Rockomax64.BW_4270481904
 	partName = Part
 	persistentId = 3145621126
-	pos = -0.0772283301,8.22061157,3.98977685
+	pos = -0.0772283301,8.22061157,3.9897778
 	attPos = 0,0,0
 	attPos0 = -1.86693406,0.0922081918,0
 	rot = 2.10734186E-08,-0.707106829,2.10734186E-08,-0.707106829
@@ -2495,7 +2495,7 @@ PART
 	part = Rockomax64.BW_4270481856
 	partName = Part
 	persistentId = 3372521562
-	pos = -0.0772283301,15.6806107,3.98984766
+	pos = -0.0772283301,15.6806107,3.98985052
 	attPos = 0,0,0
 	attPos0 = -1.23739176E-06,7.45999908,2.27373581E-13
 	rot = -1.49011655E-07,0,0,-1.00000012
@@ -2573,7 +2573,7 @@ PART
 	part = strutConnector_4270481808
 	partName = CompoundPart
 	persistentId = 1968749685
-	pos = 0.546136022,15.9308281,2.91014576
+	pos = 0.546136498,15.9308281,2.91014767
 	attPos = 0,0,0
 	attPos0 = 0.623342156,0.25021705,-1.0796597
 	rot = 7.45058202E-08,-0.866025686,-1.29047919E-07,0.5
@@ -2604,9 +2604,9 @@ PART
 	PARTDATA
 	{
 		tgt = 4270115010
-		pos = -0.555305779,0.921173215,0.709745109
-		rot = 2.16628226E-09,0.402392149,0.0291673653,0.915019989
-		dir = -0.430914849,0.714826345,0.550759077
+		pos = -0.555307448,0.921173215,0.709746063
+		rot = 2.28211583E-09,0.402392566,0.0291673914,0.915020883
+		dir = -0.430915743,0.71482569,0.550759315
 	}
 	MODULE
 	{
@@ -2644,7 +2644,7 @@ PART
 	part = strutConnector_4270481716
 	partName = CompoundPart
 	persistentId = 2293307424
-	pos = -0.700592279,15.9308281,2.910146
+	pos = -0.700592756,15.9308281,2.91014791
 	attPos = 0,0,0
 	attPos0 = -0.623342156,0.25021705,-1.0796597
 	rot = 1.29047777E-07,-0.5,-7.45058344E-08,0.866025686
@@ -2675,9 +2675,9 @@ PART
 	PARTDATA
 	{
 		tgt = 4270115010
-		pos = -0.555296123,0.921173215,-0.709737957
-		rot = -2.16618679E-09,-0.402392149,0.0291673653,0.915019989
-		dir = -0.43091011,0.714830935,-0.550757051
+		pos = -0.555297256,0.921173215,-0.709738314
+		rot = -2.28202057E-09,-0.402392566,0.0291673914,0.915020883
+		dir = -0.430910736,0.714830518,-0.550757051
 	}
 	MODULE
 	{
@@ -2715,7 +2715,7 @@ PART
 	part = rocketNoseCone_4270481624
 	partName = Part
 	persistentId = 1828080559
-	pos = -0.0772283301,19.4106102,3.98988509
+	pos = -0.0772283301,19.4106102,3.98988891
 	attPos = 0,0,0
 	attPos0 = 6.77626487E-20,3.72999954,5.31075784E-07
 	rot = 0,0,0,-1.00000012
@@ -2736,7 +2736,6 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	link = sepMotor1_4270479466
-	link = sepMotor1_4270479426
 	attN = bottom,Rockomax64.BW_4270481856_0|0|0
 	EVENTS
 	{
@@ -2861,7 +2860,7 @@ PART
 	pos = -1.98249125,11.6446362,2.73071098
 	attPos = 0,0,0
 	attPos0 = -1.25192571,-0.195493013,-0.0055385828
-	rot = -4.58575578E-08,0.321439475,-1.55674442E-08,-0.946930289
+	rot = -4.58575293E-08,0.321439475,-1.5567462E-08,-0.946930289
 	attRot = 0,0,0,1
 	attRot0 = 1.08001274E-07,-0.707106888,1.08001295E-07,0.707106769
 	mir = 1,1,1
@@ -2994,7 +2993,7 @@ PART
 	pos = -1.98249173,19.0737972,2.7307117
 	attPos = 0,0,0
 	attPos0 = 2.9803175E-08,7.42916059,1.14772092E-07
-	rot = 7.10542736E-15,-8.94069672E-08,-7.63833441E-14,-1.00000012
+	rot = 1.0658141E-14,-8.94069672E-08,-7.63833441E-14,-1.00000012
 	attRot = 0,0,0,1
 	attRot0 = -4.58586413E-08,0.321439445,-1.5566938E-08,0.94693017
 	mir = 1,1,1
@@ -3133,7 +3132,7 @@ PART
 	part = MassiveBooster_4270481402
 	partName = Part
 	persistentId = 52333150
-	pos = 1.7296133,11.645546,2.80630946
+	pos = 1.72961426,11.645546,2.80631042
 	attPos = 0,0,0
 	attPos0 = -1.25192571,-0.195493013,-0.0055385828
 	rot = -4.58586413E-08,-0.321439236,1.556689E-08,-0.946930349
@@ -3266,7 +3265,7 @@ PART
 	part = noseCone_4270481334
 	partName = Part
 	persistentId = 3362532798
-	pos = 1.72961259,19.0747089,2.80630994
+	pos = 1.7296133,19.0747089,2.80631089
 	attPos = 0,0,0
 	attPos0 = 2.9803175E-08,7.42916059,1.14772092E-07
 	rot = -8.52651283E-13,-0.60876143,1.70530257E-13,-0.793353438
@@ -3303,7 +3302,7 @@ PART
 	part = strutConnector_4270481306
 	partName = CompoundPart
 	persistentId = 3352362134
-	pos = 1.95303249,15.5859146,2.26690602
+	pos = 1.95303345,15.5859146,2.26690602
 	attPos = 0,0,0
 	attPos0 = 0.505591929,3.9403677,-0.2919029
 	rot = -3.16740767E-09,-0.831469595,-4.83251199E-08,0.555570602
@@ -3333,9 +3332,9 @@ PART
 	PARTDATA
 	{
 		tgt = 4288058400
-		pos = -0.568323195,-0.0824625492,0.823975205
-		rot = 2.56582331E-15,0.608076215,1.15262402E-07,0.793894053
-		dir = -0.565859556,-0.0821050853,0.820403337
+		pos = -0.568324029,-0.0824625492,0.823975086
+		rot = 1.37745091E-15,0.608076632,1.15262473E-07,0.793894589
+		dir = -0.565860212,-0.0821050555,0.82040298
 	}
 	MODULE
 	{
@@ -3373,10 +3372,10 @@ PART
 	part = strutConnector_4270481214
 	partName = CompoundPart
 	persistentId = 1884882479
-	pos = -2.05743551,15.8083668,2.16148734
+	pos = -2.05743599,15.8083668,2.16148686
 	attPos = 0,0,0
 	attPos0 = -0.405966401,4.16373014,-0.405966371
-	rot = 4.83251199E-08,-0.659345686,-3.16733662E-09,0.751840115
+	rot = 4.83251128E-08,-0.659345686,-3.16734727E-09,0.751840115
 	attRot = 0,0,0,1
 	attRot0 = -2.13162804E-14,0.382683188,-1.4210853E-14,-0.923879623
 	mir = 1,1,1
@@ -3403,9 +3402,9 @@ PART
 	PARTDATA
 	{
 		tgt = 4288058400
-		pos = -0.508578658,-0.201916456,-0.675687969
-		rot = 5.01581571E-16,-0.499248773,1.05607441E-07,0.86646992
-		dir = -0.584930003,-0.232229561,-0.777126968
+		pos = -0.508579016,-0.201916456,-0.675688088
+		rot = -1.37482998E-15,-0.499249071,1.05607498E-07,0.866470397
+		dir = -0.584930241,-0.232229486,-0.777126849
 	}
 	MODULE
 	{
@@ -3661,10 +3660,10 @@ PART
 	part = sepMotor1_4270480542
 	partName = Part
 	persistentId = 2790494817
-	pos = -1.52381063,19.2006569,2.43860745
+	pos = -1.52381039,19.2006569,2.43860745
 	attPos = 0,0,0
 	attPos0 = 0.458679855,0.12685971,-0.292103946
-	rot = 0.110215135,-0.844723582,-0.190897599,-0.487701893
+	rot = 0.11021512,-0.844723701,-0.190897539,-0.487701774
 	attRot = 0,0,0,1
 	attRot0 = -0.110215448,0.844723165,0.190898314,0.487702072
 	mir = 1,1,1
@@ -3760,10 +3759,10 @@ PART
 	part = sepMotor1_4270480502
 	partName = Part
 	persistentId = 2798400177
-	pos = 1.30891454,19.11446,2.39996004
+	pos = 1.30891466,19.11446,2.39996028
 	attPos = 0,0,0
 	attPos0 = 0.283594996,0.0397530161,-0.51150012
-	rot = -0.0843552798,-0.901154935,-0.203650743,0.373270303
+	rot = -0.0843553022,-0.901154935,-0.203650728,0.373270303
 	attRot = 0,0,0,1
 	attRot0 = -0.0570515729,0.942166686,0.212919474,0.252452701
 	mir = 1,1,1
@@ -4414,7 +4413,7 @@ PART
 	part = trussAdapter_4270480218
 	partName = Part
 	persistentId = 3595923842
-	pos = -0.0772285685,13.5842838,0.309294552
+	pos = -0.0772285685,13.5842857,0.309294552
 	attPos = 0,0,0
 	attPos0 = 0,-0.760226429,0
 	rot = 0,0,1.00000012,0
@@ -4453,7 +4452,7 @@ PART
 	part = wheelMed_4270480182
 	partName = Part
 	persistentId = 3536961686
-	pos = 0.446000665,13.8083096,0.611378074
+	pos = 0.446000904,13.8083115,0.611378074
 	attPos = 0,0,0
 	attPos0 = -0.523218215,-0.224025607,0.302079976
 	rot = -0.258818597,8.42937737E-08,0.965926051,8.42937737E-08
@@ -4637,7 +4636,7 @@ PART
 	part = wheelMed_4270480054
 	partName = Part
 	persistentId = 2447129610
-	pos = -0.602950692,13.8383198,0.612822056
+	pos = -0.602951407,13.8383217,0.612822533
 	attPos = 0,0,0
 	attPos0 = 0.525701225,-0.254037023,0.303513497
 	rot = -0.965925813,-1.21172192E-07,0.258819669,-8.95620573E-08
@@ -4821,7 +4820,7 @@ PART
 	part = RadialDrill_4270479926
 	partName = Part
 	persistentId = 1075441834
-	pos = -0.0772236511,13.6193981,-0.103327721
+	pos = -0.0772234127,13.6194,-0.103328317
 	attPos = 0,0,0
 	attPos0 = -2.98022602E-08,-0.0351169817,-0.412610263
 	rot = 2.10734274E-08,0.707106888,-2.10734274E-08,-0.707106888
@@ -4988,7 +4987,7 @@ PART
 	part = wheelMed_4270479722
 	partName = Part
 	persistentId = 1278346042
-	pos = -0.600131989,12.6850185,0.611194491
+	pos = -0.600132704,12.6850185,0.611194968
 	attPos = 0,0,0
 	attPos0 = 0.522883356,-0.0827102363,0.301886529
 	rot = 0.683012664,0.183013245,-0.183013126,0.683012664
@@ -5172,7 +5171,7 @@ PART
 	part = wheelMed_4270479594
 	partName = Part
 	persistentId = 3189625547
-	pos = 0.523552656,12.6276512,0.470268279
+	pos = 0.523553133,12.6276512,0.47026816
 	attPos = 0,0,0
 	attPos0 = -0.600765526,-0.0253443625,0.160974368
 	rot = 0.0922958553,0.701057434,-0.701057553,0.0922960043
@@ -5353,210 +5352,10 @@ PART
 }
 PART
 {
-	part = sepMotor1_4270479466
-	partName = Part
-	persistentId = 1503406998
-	pos = 0.0296829194,21.3217449,3.59089327
-	attPos = 0,0,0
-	attPos0 = 0.106907181,1.91113484,-0.398982555
-	rot = 0.0380577967,-0.948365331,-0.289078295,-0.124854833
-	attRot = 0,0,0,1
-	attRot0 = -0.0380577631,0.94836551,0.28907758,0.124854602
-	mir = 1,1,1
-	symMethod = Mirror
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 4
-	resPri = 0
-	dstg = 2
-	sidx = 0
-	sqor = 4
-	sepI = 4
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = sepMotor1_4270479426
-	srfN = srfAttach,rocketNoseCone_4270481624
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEnginesFX
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ActivateAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = SolidFuel
-		amount = 8
-		maxAmount = 8
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = sepMotor1_4270479426
-	partName = Part
-	persistentId = 2619199599
-	pos = -0.184139699,21.3217449,3.59090209
-	attPos = 0,0,0
-	attPos0 = -0.106907062,1.91113484,-0.398982495
-	rot = -0.0380576551,-0.948365092,-0.289079398,0.124854505
-	attRot = 0,0,0,1
-	attRot0 = 0.038057752,0.94836551,0.28907755,-0.124854527
-	mir = 1,1,1
-	symMethod = Mirror
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 4
-	resPri = 0
-	dstg = 2
-	sidx = 0
-	sqor = 4
-	sepI = 4
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = sepMotor1_4270479466
-	srfN = srfAttach,rocketNoseCone_4270481624
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEnginesFX
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ActivateAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = SolidFuel
-		amount = 8
-		maxAmount = 8
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
 	part = launchClamp1_4270479386
 	partName = Part
 	persistentId = 2408449909
-	pos = -0.0772278532,3.4318428,6.03513479
+	pos = -0.0772278532,3.4318428,6.03513765
 	attPos = 0,0,0
 	attPos0 = -2.04533744,-4.7887702,2.3841848E-07
 	rot = 0,1.00000012,-3.15485522E-08,-1.1920929E-07
@@ -5880,7 +5679,7 @@ PART
 	pos = -2.13697505,8.72445869,-1.75044882
 	attPos = 0,0,0
 	attPos0 = -1.10113299,1.62701297,2.5331974E-07
-	rot = 2.06503188E-07,-0.382684082,-8.55367261E-08,-0.923879266
+	rot = 2.06503216E-07,-0.382684082,-8.55367688E-08,-0.923879266
 	attRot = 0,0,0,1
 	attRot0 = -3.82465473E-08,0.707106829,3.82465686E-08,0.707106829
 	mir = 1,1,1
@@ -6004,7 +5803,7 @@ PART
 	pos = 1.9825201,8.72445869,-1.75045025
 	attPos = 0,0,0
 	attPos0 = -1.10113275,1.62701297,-3.57627727E-07
-	rot = -2.06503131E-07,-0.382683963,-8.55365769E-08,0.923879266
+	rot = -2.06503159E-07,-0.382684022,-8.5536584E-08,0.923879385
 	attRot = 0,0,0,1
 	attRot0 = 3.82465544E-08,-0.707106769,-3.82465686E-08,-0.707106829
 	mir = 1,1,1
@@ -6125,8 +5924,8 @@ PART
 	part = SSME_4270479064
 	partName = Part
 	persistentId = 3024965593
-	pos = 0.522771478,4.43766499,0.509295046
-	attPos = -0.720792651,-0.168570518,-1.12079239
+	pos = 0.522771478,4.43766499,0.409295052
+	attPos = -0.720792651,-0.168570518,-1.22079241
 	attPos0 = 1.32079268,-0.631429672,1.32079244
 	rot = -4.21468442E-08,0.382683456,2.10734221E-08,0.923879504
 	attRot = -0.707106709,0,0,-0.707106709
@@ -6335,8 +6134,8 @@ PART
 	part = SSME_4270478954
 	partName = Part
 	persistentId = 1438221537
-	pos = -0.67722857,4.43766499,0.509295046
-	attPos = 0.720792651,-0.168570518,-1.12079239
+	pos = -0.67722857,4.43766499,0.409295052
+	attPos = 0.720792651,-0.168570518,-1.22079241
 	attPos0 = -1.32079268,-0.631429672,1.32079244
 	rot = -4.21468442E-08,-0.382683456,-2.10734221E-08,0.923879504
 	attRot = -0.707106709,0,0,-0.707106709
@@ -6548,7 +6347,7 @@ PART
 	pos = -2.13697386,4.06195831,-1.75044763
 	attPos = 0,0,0
 	attPos0 = -9.41824418E-13,-4.66250038,-3.85170267E-07
-	rot = 0.707106829,-1.77635684E-14,0.707106948,7.10542736E-15
+	rot = 0.707106829,-1.77635684E-15,0.707106948,2.13162821E-14
 	attRot = 0.707106709,0,0.707106709,0
 	attRot0 = -0.3826828,2.06503387E-07,-0.923879862,8.55362217E-08
 	mir = 1,1,1
@@ -6604,10 +6403,10 @@ PART
 	part = fuelTank_4259536976
 	partName = Part
 	persistentId = 1959454207
-	pos = 1.98251987,4.06195831,-1.75044978
+	pos = 1.98252058,4.06195831,-1.75045073
 	attPos = 0,0,0
 	attPos0 = -2.74447186E-13,-4.66250038,-8.6200663E-07
-	rot = -0.707106829,0,0.707106829,-1.42108547E-14
+	rot = -0.707106829,0,0.707106829,-3.55271368E-14
 	attRot = 0.707106709,0,0.707106709,0
 	attRot0 = -0.38268292,-2.06503245E-07,0.923879802,8.55362785E-08
 	mir = 1,1,1
@@ -6951,7 +6750,7 @@ PART
 	part = LgRadialSolarPanel_4287499608
 	partName = Part
 	persistentId = 4086657458
-	pos = -0.0772283897,11.6568775,-0.559766293
+	pos = -0.0772279128,11.6568775,-0.559767008
 	attPos = 0,0,0
 	attPos0 = -0.869060278,0.15956676,5.96046199E-08
 	rot = 0.706918538,0.706913054,0.0163163543,-0.0165557861
@@ -7490,5 +7289,104 @@ PART
 		UPGRADESAPPLIED
 		{
 		}
+	}
+}
+PART
+{
+	part = sepMotor1_4270479466
+	partName = Part
+	persistentId = 1503406998
+	pos = -0.0772283301,21.3830242,4.36245155
+	attPos = 0,0,0
+	attPos0 = 2.97986915E-08,1.9724139,0.372562557
+	rot = -4.50768539E-07,-0.291572809,-0.95654881,1.49011612E-07
+	attRot = 0,0,-0.999999881,0
+	attRot0 = 4.50768397E-07,0.291572779,0.956548631,-1.4901164E-07
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 2
+	sidx = 1
+	sqor = 4
+	sepI = 4
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,rocketNoseCone_4270481624
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ActivateAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 8
+		maxAmount = 8
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
 	}
 }
