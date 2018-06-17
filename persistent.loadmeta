@@ -1,4 +1,4 @@
-saveMD5 = c74a163a7a184cbd60614a196fe715e0
+saveMD5 = fae03e76f5eb7bf0c2d5a1a600a5079b
 id = f0a1d5c3-91ee-4006-a202-bb14507b327f
 title = Karmageddon
 briefing = 
@@ -6,5 +6,5 @@ author = Daniel Tsosie
 hardIcon = False
 difficulty = Intermediate
 vesselCount = 2
-nodeCount = 9
+nodeCount = 16
 startUT = 0

@@ -15,7 +15,7 @@ MISSION
 	bannerFail = fail01.png
 	isScoreEnabled = True
 	maxScore = 0
-	historyId = c4fddc3a-7124-406b-858b-1a86cac43278
+	historyId = 4332f155-1ca9-4df2-a167-fde343184065
 	activeNodeID = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 	currentScore = 0
 	exportName = 
@@ -548,6 +548,7 @@ MISSION
 			{
 				nodeID = 896dd646-b3ff-408c-92f1-6b0b4c3d8622
 				nodeID = b54f7386-0ff2-4ea5-a377-05812a262e3c
+				nodeID = 1c0fe613-097d-4770-9df0-5fa27f4f1ef4
 			}
 		}
 		NODE
@@ -627,7 +628,7 @@ MISSION
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 142.17932448750628
+								editorRotation = 276.90928658451946
 							}
 						}
 						PARTCREW
@@ -720,12 +721,12 @@ MISSION
 								SMA = 690000.5
 								ECC = 9.9999999739376724E-07
 								INC = 0
-								LPE = 40
+								LPE = 120
 								LAN = 0
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 142.17932448750628
+								editorRotation = 276.90928658451946
 							}
 						}
 						PARTCREW
@@ -828,11 +829,11 @@ MISSION
 			category = Location
 			showScreenMessage = False
 			msgTime = 5
-			editorPosition = 470.560547,7.33398438
+			editorPosition = 473.060547,-22.6655273
 			isStartNode = False
 			isEndNode = False
 			message = 
-			isObjective = False
+			isObjective = True
 			isCatchAll = False
 			isEvent = False
 			activateOnceOnly = True
@@ -876,7 +877,7 @@ MISSION
 						distanceToNode = 00000000-0000-0000-0000-000000000000
 						calculationType = StraightLine
 						comparisonOperator = LessThan
-						distance = 500
+						distance = 10000
 						DISTANCEFROMKERBAL
 						{
 							kerbalName = Bob Kerman
@@ -927,7 +928,7 @@ MISSION
 			category = Utility
 			showScreenMessage = False
 			msgTime = 5
-			editorPosition = 476.560547,-187.33252
+			editorPosition = 479.060059,-264.83252
 			isStartNode = False
 			isEndNode = False
 			message = 
@@ -972,7 +973,7 @@ MISSION
 					restartOnSceneLoad = False
 					isRunning = False
 					message = Dock with Mir
-					duration = 5
+					duration = 10
 					style = UPPER_LEFT
 				}
 			}
@@ -998,7 +999,7 @@ MISSION
 			category = Vessel
 			showScreenMessage = False
 			msgTime = 5
-			editorPosition = 838.560547,138.66748
+			editorPosition = 828.560547,138.66748
 			isStartNode = False
 			isEndNode = False
 			message = 
@@ -1079,7 +1080,7 @@ MISSION
 			category = Vessel
 			showScreenMessage = False
 			msgTime = 5
-			editorPosition = 838.560547,-77.3325195
+			editorPosition = 833.560059,-62.3325195
 			isStartNode = False
 			isEndNode = False
 			message = 
@@ -1165,9 +1166,9 @@ MISSION
 			category = Vessel
 			showScreenMessage = False
 			msgTime = 5
-			editorPosition = 840.560547,-311.33252
+			editorPosition = 840.560547,-291.332031
 			isStartNode = False
-			isEndNode = True
+			isEndNode = False
 			message = 
 			isObjective = True
 			isCatchAll = False
@@ -1186,6 +1187,10 @@ MISSION
 					nodeID = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
 					connectorColor = #FFFFFF
 				}
+			}
+			TONODEIDS
+			{
+				nodeID = e5888587-a092-4ae2-8eec-ce9d206f9b0d
 			}
 			TESTGROUPS
 			{
@@ -1234,6 +1239,539 @@ MISSION
 				}
 			}
 		}
+		NODE
+		{
+			title = Dialog Message
+			id = e5888587-a092-4ae2-8eec-ce9d206f9b0d
+			description = Display a message in a dialog box
+			category = Utility
+			showScreenMessage = False
+			msgTime = 5
+			editorPosition = 1159.36719,135.709961
+			isStartNode = False
+			isEndNode = False
+			message = 
+			isObjective = False
+			isCatchAll = False
+			isEvent = False
+			activateOnceOnly = True
+			activatedUT = 0
+			isLogicNode = False
+			basicNodeSource = DialogMessage
+			basicNodeIconURL = dialog-message
+			nodeColor = #F68834
+			missionEndOptions = Success
+			FROMNODES
+			{
+				FROMNODE
+				{
+					nodeID = aeb04335-86f9-49e1-a396-518e040aacae
+					connectorColor = #FFFFFF
+				}
+			}
+			TONODEIDS
+			{
+				nodeID = 3541add6-5cc1-458e-9096-20c2782a7da6
+			}
+			TESTGROUPS
+			{
+				TESTGROUP
+				{
+					title = 
+				}
+			}
+			ACTIONS
+			{
+				ACTIONMODULE
+				{
+					name = ActionDialogMessage
+					title = Dialog Message
+					parametersDisplayedInSAP = messageHeading
+					parametersDisplayedInSAP = message
+					parametersDisplayedInSAP = missionInstructor
+					restartOnSceneLoad = False
+					isRunning = False
+					message = Head for the Mun
+					instructorName = Instructor_Gene
+					vintageSuit = False
+					textAreaSize = 135
+					pauseMission = False
+					screenArea = Center
+					autoClose = False
+					autoCloseTimeOut = 20
+					isBriefingMessage = False
+					autoGrowDialogHeight = False
+				}
+			}
+			NODEBODY_PARAMETERS
+			{
+				MODULE_PARAMETER
+				{
+					module = ActionDialogMessage
+					parameter = missionInstructor
+				}
+			}
+		}
+		NODE
+		{
+			title = Approach the Mun
+			id = 3541add6-5cc1-458e-9096-20c2782a7da6
+			description = Set course toward the mun
+			category = Location
+			showScreenMessage = False
+			msgTime = 5
+			editorPosition = 1161.86743,10.7094727
+			isStartNode = False
+			isEndNode = False
+			message = 
+			isObjective = True
+			isCatchAll = False
+			isEvent = False
+			activateOnceOnly = True
+			activatedUT = 0
+			isLogicNode = False
+			basicNodeSource = ReachSOI
+			basicNodeIconURL = reach-soi
+			nodeColor = #73D2D6
+			missionEndOptions = Success
+			FROMNODES
+			{
+				FROMNODE
+				{
+					nodeID = e5888587-a092-4ae2-8eec-ce9d206f9b0d
+					connectorColor = #FFFFFF
+				}
+			}
+			TONODEIDS
+			{
+				nodeID = d281710e-2f17-4e42-b30a-123e05002e8f
+			}
+			TESTGROUPS
+			{
+				TESTGROUP
+				{
+					title = 
+					TESTMODULE
+					{
+						name = TestSOIReached
+						title = SOI Reached
+						parametersDisplayedInSAP = vesselID
+						parametersDisplayedInSAP = body
+						vesselID = 0
+						bodyName = Mun
+					}
+				}
+			}
+			NODEBODY_PARAMETERS
+			{
+				MODULE_PARAMETER
+				{
+					module = TestSOIReached
+					parameter = body
+				}
+				MODULE_PARAMETER
+				{
+					module = TestSOIReached
+					parameter = vesselID
+				}
+			}
+		}
+		NODE
+		{
+			title = Spawn Asteroid
+			id = 1c0fe613-097d-4770-9df0-5fa27f4f1ef4
+			description = Spawn an Asteroid somewhere in the universe
+			category = Spawnable
+			showScreenMessage = False
+			msgTime = 5
+			editorPosition = -4698.13281,4579.25439
+			isStartNode = False
+			isEndNode = False
+			message = 
+			isObjective = False
+			isCatchAll = False
+			isEvent = False
+			activateOnceOnly = True
+			activatedUT = 0
+			isLogicNode = False
+			basicNodeSource = CreateAsteroid
+			basicNodeIconURL = create-asteroid
+			nodeColor = #C3F948
+			dockParentNodeID = 4f9f95b1-98aa-451c-8a18-f5046413b10f
+			missionEndOptions = Success
+			TESTGROUPS
+			{
+				TESTGROUP
+				{
+					title = 
+				}
+			}
+			ACTIONS
+			{
+				ACTIONMODULE
+				{
+					name = ActionCreateAsteroid
+					title = Spawn Asteroid
+					parametersDisplayedInSAP = asteroid
+					parametersDisplayedInSAP = splashed
+					parametersDisplayedInSAP = location
+					restartOnSceneLoad = False
+					isRunning = False
+					asteroidName = Ast. WVE-910
+					asteroidSeed = 1456250391
+					asteroidClass = E
+					asteroidType = Regular
+					persistentId = 1852017030
+					locationChoice = orbit
+					LANDEDDATA
+					{
+						bodyName = Kerbin
+						gizmoIcon = Asteroid
+						lat = 0.020663967117913878
+						lon = -74.783844479006675
+						alt = 0
+						rot = 0,0,0
+						splashed = True
+					}
+					ORBITDATA
+					{
+						SMA = 250000
+						ECC = 0
+						INC = 0.0001
+						LPE = 0
+						LAN = 0
+						MNA = 0
+						EPH = 0
+						REF = 2
+						editorRotation = 230.22657504434497
+					}
+				}
+			}
+			NODEBODY_PARAMETERS
+			{
+				MODULE_PARAMETER
+				{
+					module = ActionCreateAsteroid
+					parameter = asteroid
+				}
+				MODULE_PARAMETER
+				{
+					module = ActionCreateAsteroid
+					parameter = splashed
+				}
+				MODULE_PARAMETER
+				{
+					module = ActionCreateAsteroid
+					parameter = location
+				}
+			}
+		}
+		NODE
+		{
+			title = Dialog Message
+			id = dae66e5b-288c-4770-9f93-ac7a3a9eab70
+			description = Display a message in a dialog box
+			category = Utility
+			showScreenMessage = False
+			msgTime = 5
+			editorPosition = 1804.36743,133.210938
+			isStartNode = False
+			isEndNode = False
+			message = 
+			isObjective = False
+			isCatchAll = False
+			isEvent = False
+			activateOnceOnly = True
+			activatedUT = 0
+			isLogicNode = False
+			basicNodeSource = DialogMessage
+			basicNodeIconURL = dialog-message
+			nodeColor = #F68834
+			missionEndOptions = Success
+			FROMNODES
+			{
+				FROMNODE
+				{
+					nodeID = 699bc6da-ad41-4236-9f9d-90e67cf001e7
+					connectorColor = #FFFFFF
+				}
+			}
+			TONODEIDS
+			{
+				nodeID = 305df3cd-9acb-4864-a649-b550d12ac06b
+			}
+			TESTGROUPS
+			{
+				TESTGROUP
+				{
+					title = 
+				}
+			}
+			ACTIONS
+			{
+				ACTIONMODULE
+				{
+					name = ActionDialogMessage
+					title = Dialog Message
+					parametersDisplayedInSAP = messageHeading
+					parametersDisplayedInSAP = message
+					parametersDisplayedInSAP = missionInstructor
+					restartOnSceneLoad = False
+					isRunning = False
+					message = Time to head back home
+					instructorName = Instructor_Gene
+					vintageSuit = False
+					textAreaSize = 135
+					pauseMission = False
+					screenArea = Center
+					autoClose = False
+					autoCloseTimeOut = 20
+					isBriefingMessage = False
+					autoGrowDialogHeight = False
+				}
+			}
+			NODEBODY_PARAMETERS
+			{
+				MODULE_PARAMETER
+				{
+					module = ActionDialogMessage
+					parameter = missionInstructor
+				}
+			}
+		}
+		NODE
+		{
+			title = Landed Vessel
+			id = 305df3cd-9acb-4864-a649-b550d12ac06b
+			description = Check if a vessel is landed
+			category = Location
+			showScreenMessage = False
+			msgTime = 5
+			editorPosition = 1811.86743,8.20947266
+			isStartNode = False
+			isEndNode = True
+			message = 
+			isObjective = True
+			isCatchAll = False
+			isEvent = False
+			activateOnceOnly = True
+			activatedUT = 0
+			isLogicNode = False
+			basicNodeSource = Landed
+			basicNodeIconURL = vessel-landed
+			nodeColor = #73D2D6
+			missionEndOptions = Success
+			FROMNODES
+			{
+				FROMNODE
+				{
+					nodeID = dae66e5b-288c-4770-9f93-ac7a3a9eab70
+					connectorColor = #FFFFFF
+				}
+			}
+			TESTGROUPS
+			{
+				TESTGROUP
+				{
+					title = 
+					TESTMODULE
+					{
+						name = TestVesselSituationLanded
+						title = Landed Vessel
+						parametersDisplayedInSAP = locationSituation
+						parametersDisplayedInSAP = vesselID
+						vesselID = 0
+						stabilizationTime = 1
+						locationChoice = bodyData
+						surfaceVelocity = 0.10000000149011612
+						BODYDATA
+						{
+							bodyName = Kerbin
+						}
+						BIOMEDATA
+						{
+							bodyName = Kerbin
+						}
+						GROUNDAREA
+						{
+							bodyName = Kerbin
+							lat = 0
+							lon = 0
+							alt = 0
+							radius = 150000
+						}
+					}
+				}
+			}
+			NODEBODY_PARAMETERS
+			{
+				MODULE_PARAMETER
+				{
+					module = TestVesselSituationLanded
+					parameter = locationSituation
+				}
+				MODULE_PARAMETER
+				{
+					module = TestVesselSituationLanded
+					parameter = vesselID
+				}
+			}
+		}
+		NODE
+		{
+			title = Dialog Message
+			id = d281710e-2f17-4e42-b30a-123e05002e8f
+			description = Display a message in a dialog box
+			category = Utility
+			showScreenMessage = False
+			msgTime = 5
+			editorPosition = 1486.86743,132.375977
+			isStartNode = False
+			isEndNode = False
+			message = 
+			isObjective = False
+			isCatchAll = False
+			isEvent = False
+			activateOnceOnly = True
+			activatedUT = 0
+			isLogicNode = False
+			basicNodeSource = DialogMessage
+			basicNodeIconURL = dialog-message
+			nodeColor = #F68834
+			missionEndOptions = Success
+			FROMNODES
+			{
+				FROMNODE
+				{
+					nodeID = 3541add6-5cc1-458e-9096-20c2782a7da6
+					connectorColor = #FFFFFF
+				}
+			}
+			TONODEIDS
+			{
+				nodeID = 699bc6da-ad41-4236-9f9d-90e67cf001e7
+			}
+			TESTGROUPS
+			{
+				TESTGROUP
+				{
+					title = 
+				}
+			}
+			ACTIONS
+			{
+				ACTIONMODULE
+				{
+					name = ActionDialogMessage
+					title = Dialog Message
+					parametersDisplayedInSAP = messageHeading
+					parametersDisplayedInSAP = message
+					parametersDisplayedInSAP = missionInstructor
+					restartOnSceneLoad = False
+					isRunning = False
+					message = We need to get near the asteroid and land the Karmadillo onto it.
+					instructorName = Instructor_Gene
+					vintageSuit = False
+					textAreaSize = 135
+					pauseMission = False
+					screenArea = Center
+					autoClose = False
+					autoCloseTimeOut = 20
+					isBriefingMessage = False
+					autoGrowDialogHeight = False
+				}
+			}
+			NODEBODY_PARAMETERS
+			{
+				MODULE_PARAMETER
+				{
+					module = ActionDialogMessage
+					parameter = missionInstructor
+				}
+			}
+		}
+		NODE
+		{
+			title = Landed Vessel
+			id = 699bc6da-ad41-4236-9f9d-90e67cf001e7
+			description = Check if a vessel is landed
+			category = Location
+			showScreenMessage = False
+			msgTime = 5
+			editorPosition = 1489.36743,14.8759766
+			isStartNode = False
+			isEndNode = False
+			message = 
+			isObjective = True
+			isCatchAll = False
+			isEvent = False
+			activateOnceOnly = True
+			activatedUT = 0
+			isLogicNode = False
+			basicNodeSource = Landed
+			basicNodeIconURL = vessel-landed
+			nodeColor = #73D2D6
+			missionEndOptions = Success
+			FROMNODES
+			{
+				FROMNODE
+				{
+					nodeID = d281710e-2f17-4e42-b30a-123e05002e8f
+					connectorColor = #FFFFFF
+				}
+			}
+			TONODEIDS
+			{
+				nodeID = dae66e5b-288c-4770-9f93-ac7a3a9eab70
+			}
+			TESTGROUPS
+			{
+				TESTGROUP
+				{
+					title = 
+					TESTMODULE
+					{
+						name = TestVesselSituationLanded
+						title = Landed Vessel
+						parametersDisplayedInSAP = locationSituation
+						parametersDisplayedInSAP = vesselID
+						vesselID = 0
+						stabilizationTime = 1
+						locationChoice = bodyData
+						surfaceVelocity = 0.10000000149011612
+						BODYDATA
+						{
+							bodyName = AnyValid
+						}
+						BIOMEDATA
+						{
+							bodyName = Kerbin
+						}
+						GROUNDAREA
+						{
+							bodyName = Kerbin
+							lat = 0
+							lon = 0
+							alt = 0
+							radius = 150000
+						}
+					}
+				}
+			}
+			NODEBODY_PARAMETERS
+			{
+				MODULE_PARAMETER
+				{
+					module = TestVesselSituationLanded
+					parameter = locationSituation
+				}
+				MODULE_PARAMETER
+				{
+					module = TestVesselSituationLanded
+					parameter = vesselID
+				}
+			}
+		}
 	}
 	TAGS
 	{
@@ -1244,7 +1782,70 @@ MISSION
 		{
 			PATHINFO
 			{
+				startNodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
+			}
+			PATHINFO
+			{
+				startNodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
+				PATH
+				{
+					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
+				}
+			}
+			PATHINFO
+			{
+				startNodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
+				PATH
+				{
+					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
+					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
+				}
+			}
+			PATHINFO
+			{
+				startNodeId = d281710e-2f17-4e42-b30a-123e05002e8f
+				PATH
+				{
+					nodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
+					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
+					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
+				}
+			}
+			PATHINFO
+			{
+				startNodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
+				PATH
+				{
+					nodeId = d281710e-2f17-4e42-b30a-123e05002e8f
+					nodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
+					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
+					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
+				}
+			}
+			PATHINFO
+			{
+				startNodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
+				PATH
+				{
+					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
+					nodeId = d281710e-2f17-4e42-b30a-123e05002e8f
+					nodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
+					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
+					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
+				}
+			}
+			PATHINFO
+			{
 				startNodeId = aeb04335-86f9-49e1-a396-518e040aacae
+				PATH
+				{
+					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
+					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
+					nodeId = d281710e-2f17-4e42-b30a-123e05002e8f
+					nodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
+					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
+					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
+				}
 			}
 			PATHINFO
 			{
@@ -1252,6 +1853,12 @@ MISSION
 				PATH
 				{
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
+					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
+					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
+					nodeId = d281710e-2f17-4e42-b30a-123e05002e8f
+					nodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
+					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
+					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
 				}
 			}
 			PATHINFO
@@ -1261,6 +1868,12 @@ MISSION
 				{
 					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
+					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
+					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
+					nodeId = d281710e-2f17-4e42-b30a-123e05002e8f
+					nodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
+					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
+					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
 				}
 			}
 			PATHINFO
@@ -1271,6 +1884,12 @@ MISSION
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
+					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
+					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
+					nodeId = d281710e-2f17-4e42-b30a-123e05002e8f
+					nodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
+					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
+					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
 				}
 			}
 			PATHINFO
@@ -1282,6 +1901,12 @@ MISSION
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
+					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
+					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
+					nodeId = d281710e-2f17-4e42-b30a-123e05002e8f
+					nodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
+					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
+					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
 				}
 			}
 			PATHINFO
@@ -1294,6 +1919,12 @@ MISSION
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
+					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
+					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
+					nodeId = d281710e-2f17-4e42-b30a-123e05002e8f
+					nodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
+					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
+					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
 				}
 			}
 			PATHINFO
@@ -1307,6 +1938,12 @@ MISSION
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
+					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
+					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
+					nodeId = d281710e-2f17-4e42-b30a-123e05002e8f
+					nodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
+					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
+					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
 				}
 			}
 		}
@@ -1379,6 +2016,105 @@ MISSION
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 				}
 			}
+			PATHINFO
+			{
+				startNodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
+				PATH
+				{
+					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
+					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
+					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+					nodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
+				}
+			}
+			PATHINFO
+			{
+				startNodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
+				PATH
+				{
+					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
+					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
+					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
+					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+					nodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
+				}
+			}
+			PATHINFO
+			{
+				startNodeId = d281710e-2f17-4e42-b30a-123e05002e8f
+				PATH
+				{
+					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
+					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
+					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
+					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
+					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+					nodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
+				}
+			}
+			PATHINFO
+			{
+				startNodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
+				PATH
+				{
+					nodeId = d281710e-2f17-4e42-b30a-123e05002e8f
+					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
+					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
+					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
+					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
+					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+					nodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
+				}
+			}
+			PATHINFO
+			{
+				startNodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
+				PATH
+				{
+					nodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
+					nodeId = d281710e-2f17-4e42-b30a-123e05002e8f
+					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
+					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
+					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
+					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
+					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+					nodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
+				}
+			}
+			PATHINFO
+			{
+				startNodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
+				PATH
+				{
+					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
+					nodeId = 699bc6da-ad41-4236-9f9d-90e67cf001e7
+					nodeId = d281710e-2f17-4e42-b30a-123e05002e8f
+					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
+					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
+					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
+					nodeId = 6fc60aeb-8b78-4d63-838a-e917f6947f8a
+					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+					nodeId = f02c0cd5-89e5-426d-a371-0467600385a6
+					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
+				}
+			}
 		}
 		BLOCKS
 		{
@@ -1406,12 +2142,36 @@ MISSION
 			{
 				id = aeb04335-86f9-49e1-a396-518e040aacae
 			}
+			NODE
+			{
+				id = e5888587-a092-4ae2-8eec-ce9d206f9b0d
+			}
+			NODE
+			{
+				id = 3541add6-5cc1-458e-9096-20c2782a7da6
+			}
+			NODE
+			{
+				id = d281710e-2f17-4e42-b30a-123e05002e8f
+			}
+			NODE
+			{
+				id = 699bc6da-ad41-4236-9f9d-90e67cf001e7
+			}
+			NODE
+			{
+				id = dae66e5b-288c-4770-9f93-ac7a3a9eab70
+			}
+			NODE
+			{
+				id = 305df3cd-9acb-4864-a649-b550d12ac06b
+			}
 		}
 	}
 }
 EDITOR_STATUS
 {
-	canvasPosition = 3875.8125,-4288.87646
-	zoomLevel = 1
+	canvasPosition = 2920.18555,-3389.90039
+	zoomLevel = 0.799999952
 	canvasSize = 10000,10000
 }
