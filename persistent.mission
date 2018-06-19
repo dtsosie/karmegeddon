@@ -2,11 +2,11 @@ MISSION
 {
 	id = f0a1d5c3-91ee-4006-a202-bb14507b327f
 	title = Karmageddon
-	briefing = 
+	briefing = Kerbin's love the movie Karmageddon! Despite the science being completely inaccurate, a petition has received enough signatures to launch a dress rehearsal.\n\nWe will launch our Freedom Orbiter with our Karmadillo mining rover. After refueling at the Kir Space Station, we will intercept an asteroid near the Mun. The one we placed there during our more scientifically accurate Asteroid Redirect mission.\n\nIs this wise? No. Will this gain public acclaim and more funds for our space program? YES.
 	author = Daniel Tsosie
 	modsBriefing = 
 	hardIcon = False
-	difficulty = Intermediate
+	difficulty = Advanced
 	isBriefingSet = True
 	seed = 1172241752
 	flag = Squad/Flags/default
@@ -15,7 +15,7 @@ MISSION
 	bannerFail = fail01.png
 	isScoreEnabled = True
 	maxScore = 0
-	historyId = dd062dc0-9bec-4360-a03e-f3ded69efec9
+	historyId = 4dcadf59-f785-4ec8-b26b-5c41fcb00f54
 	activeNodeID = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 	currentScore = 0
 	exportName = 
@@ -33,7 +33,7 @@ MISSION
 		autoGenerateCrew = False
 		startUT = 0
 		resourceSeed = 735302388
-		showBriefing = False
+		showBriefing = True
 		instructorName = Instructor_Gene
 		vintageSuit = False
 		ROSTER
@@ -49,7 +49,7 @@ MISSION
 				badS = True
 				veteran = True
 				tour = False
-				state = Assigned
+				state = Available
 				inactive = False
 				inactiveTimeEnd = 0
 				gExperienced = 0
@@ -80,7 +80,7 @@ MISSION
 				badS = False
 				veteran = True
 				tour = False
-				state = Assigned
+				state = Available
 				inactive = False
 				inactiveTimeEnd = 0
 				gExperienced = 0
@@ -173,7 +173,7 @@ MISSION
 				badS = False
 				veteran = False
 				tour = False
-				state = Assigned
+				state = Available
 				inactive = False
 				inactiveTimeEnd = 0
 				gExperienced = 0
@@ -383,7 +383,7 @@ MISSION
 		AWARDMODULE
 		{
 			name = AwardModule_MissionTime
-			id = 85
+			id = 1859
 			awardID = MissionTime
 			enabled = False
 			score = 0
@@ -392,25 +392,33 @@ MISSION
 		AWARDMODULE
 		{
 			name = AwardModule_Fuel
-			id = 86
+			id = 1860
 			awardID = Fuel
 			enabled = False
 			score = 0
 			resourceName = LiquidFuel
 			resourceAmount = 0
+			PROGRESS
+			{
+				totalSpentResource = 0
+			}
 		}
 		AWARDMODULE
 		{
 			name = AwardModule_KerbalsSurvived
-			id = 87
+			id = 1861
 			awardID = KerbalsSurvived
 			enabled = False
 			score = 0
+			PROGRESS
+			{
+				kerbalsAreAlive = True
+			}
 		}
 		AWARDMODULE
 		{
 			name = AwardModule_KerbalsDied
-			id = 88
+			id = 1862
 			awardID = KerbalsDied
 			enabled = False
 			score = 0
@@ -418,34 +426,45 @@ MISSION
 		AWARDMODULE
 		{
 			name = AwardModule_TraveledLessThan
-			id = 89
+			id = 1863
 			awardID = TraveledLessThan
 			enabled = False
 			score = 0
 			distance = 0
+			PROGRESS
+			{
+				distanceTraveled = 0
+			}
 		}
 		AWARDMODULE
 		{
 			name = AwardModule_TraveledMoreThan
-			id = 90
+			id = 1864
 			awardID = TraveledMoreThan
 			enabled = False
 			score = 0
 			distance = 0
+			PROGRESS
+			{
+				distanceTraveled = 0
+			}
 		}
 		AWARDMODULE
 		{
 			name = AwardModule_VesselsUsed
-			id = 91
+			id = 1865
 			awardID = VesselsUsed
 			enabled = False
 			score = 0
 			vesselsUsed = 0
+			PROGRESS
+			{
+			}
 		}
 		AWARDMODULE
 		{
 			name = AwardModule_LandedOn
-			id = 92
+			id = 1866
 			awardID = LandedOn
 			enabled = False
 			score = 0
@@ -455,16 +474,19 @@ MISSION
 		AWARDMODULE
 		{
 			name = AwardModule_PlanetsLanded
-			id = 93
+			id = 1867
 			awardID = PlanetsLanded
 			enabled = False
 			score = 0
 			planetsLanded = 0
+			PROGRESS
+			{
+			}
 		}
 		AWARDMODULE
 		{
 			name = AwardModule_Score
-			id = 94
+			id = 1868
 			awardID = BronzeAward
 			enabled = True
 			score = 0
@@ -472,7 +494,7 @@ MISSION
 		AWARDMODULE
 		{
 			name = AwardModule_Score
-			id = 95
+			id = 1869
 			awardID = SilverAward
 			enabled = True
 			score = 0
@@ -480,7 +502,7 @@ MISSION
 		AWARDMODULE
 		{
 			name = AwardModule_Score
-			id = 96
+			id = 1870
 			awardID = GoldAward
 			enabled = True
 			score = 0
@@ -496,7 +518,7 @@ MISSION
 			category = Start
 			showScreenMessage = False
 			msgTime = 5
-			editorPosition = -110,136
+			editorPosition = -24.2861328,136
 			isStartNode = True
 			isEndNode = False
 			message = 
@@ -513,7 +535,6 @@ MISSION
 			TONODEIDS
 			{
 				nodeID = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-				nodeID = af064865-4849-4e03-a8d8-a113c5c30ed2
 			}
 			NODEBODY_PARAMETERS
 			{
@@ -607,7 +628,7 @@ MISSION
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 293.30465019574615
+								editorRotation = 218.0286106155479
 							}
 						}
 						PARTCREW
@@ -697,15 +718,15 @@ MISSION
 							}
 							ORBIT
 							{
-								SMA = 690000.5
-								ECC = 9.9999999739376724E-07
+								SMA = 690000.375
+								ECC = 9.9999999754001532E-07
 								INC = 0
 								LPE = 0
 								LAN = 0
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 293.30465019574615
+								editorRotation = 218.0286106155479
 							}
 						}
 						PARTCREW
@@ -756,6 +777,10 @@ MISSION
 					connectorColor = #FFFFFF
 				}
 			}
+			TONODEIDS
+			{
+				nodeID = af064865-4849-4e03-a8d8-a113c5c30ed2
+			}
 			TESTGROUPS
 			{
 				TESTGROUP
@@ -774,8 +799,8 @@ MISSION
 					parametersDisplayedInSAP = missionInstructor
 					restartOnSceneLoad = False
 					isRunning = False
-					messageHeading = Piloting
-					message = Set engine to full. Enable SAS, Hit Space Bar to trigger Engines, hit again to lift off.
+					messageHeading = Get geady to head to the Kir
+					message = As an experience pilot, choose your launch window. When you do though, make sure your engines are at full, pitch back at full, and head on intercept east.
 					instructorName = Instructor_Gene
 					vintageSuit = False
 					textAreaSize = 135
@@ -822,7 +847,7 @@ MISSION
 			{
 				FROMNODE
 				{
-					nodeID = 4f9f95b1-98aa-451c-8a18-f5046413b10f
+					nodeID = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					connectorColor = #FFFFFF
 				}
 			}
@@ -1518,10 +1543,6 @@ MISSION
 		{
 			PATHINFO
 			{
-				startNodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-			}
-			PATHINFO
-			{
 				startNodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
 			}
 			PATHINFO
@@ -1603,13 +1624,25 @@ MISSION
 			}
 			PATHINFO
 			{
+				startNodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+				PATH
+				{
+					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
+					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
+					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
+					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
+					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
+					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
+				}
+			}
+			PATHINFO
+			{
 				startNodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 				PATH
 				{
 					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-				}
-				PATH
-				{
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
 					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
@@ -1640,6 +1673,7 @@ MISSION
 				startNodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
 				PATH
 				{
+					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 				}
 			}
@@ -1649,6 +1683,7 @@ MISSION
 				PATH
 				{
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 				}
 			}
@@ -1659,6 +1694,7 @@ MISSION
 				{
 					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 				}
 			}
@@ -1670,6 +1706,7 @@ MISSION
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 				}
 			}
@@ -1682,6 +1719,7 @@ MISSION
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 				}
 			}
@@ -1695,6 +1733,7 @@ MISSION
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 				}
 			}
@@ -1709,6 +1748,7 @@ MISSION
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 				}
 			}
@@ -1724,63 +1764,55 @@ MISSION
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 				}
 			}
 		}
 		BLOCKS
 		{
-			OR
+			NODE
 			{
-				THEN
-				{
-					NODE
-					{
-						id = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-					}
-				}
-				THEN
-				{
-					NODE
-					{
-						id = af064865-4849-4e03-a8d8-a113c5c30ed2
-					}
-					NODE
-					{
-						id = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
-					}
-					NODE
-					{
-						id = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					}
-					NODE
-					{
-						id = aeb04335-86f9-49e1-a396-518e040aacae
-					}
-					NODE
-					{
-						id = e5888587-a092-4ae2-8eec-ce9d206f9b0d
-					}
-					NODE
-					{
-						id = 3541add6-5cc1-458e-9096-20c2782a7da6
-					}
-					NODE
-					{
-						id = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-					}
-					NODE
-					{
-						id = 305df3cd-9acb-4864-a649-b550d12ac06b
-					}
-				}
+				id = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+			}
+			NODE
+			{
+				id = af064865-4849-4e03-a8d8-a113c5c30ed2
+			}
+			NODE
+			{
+				id = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
+			}
+			NODE
+			{
+				id = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+			}
+			NODE
+			{
+				id = aeb04335-86f9-49e1-a396-518e040aacae
+			}
+			NODE
+			{
+				id = e5888587-a092-4ae2-8eec-ce9d206f9b0d
+			}
+			NODE
+			{
+				id = 3541add6-5cc1-458e-9096-20c2782a7da6
+			}
+			NODE
+			{
+				id = dae66e5b-288c-4770-9f93-ac7a3a9eab70
+			}
+			NODE
+			{
+				id = 305df3cd-9acb-4864-a649-b550d12ac06b
 			}
 		}
 	}
 }
 EDITOR_STATUS
 {
-	canvasPosition = 2158.80566,-2891.16211
+	canvasPosition = 2468.55591,-2897.46167
 	zoomLevel = 0.699999928
 	canvasSize = 10000,10000
 }

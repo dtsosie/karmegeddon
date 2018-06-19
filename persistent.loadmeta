@@ -1,10 +1,10 @@
-saveMD5 = a3c32c0eb65b030377543620bae900b2
+saveMD5 = 5a0222c124dcd97d351f704d0c2cafcf
 id = f0a1d5c3-91ee-4006-a202-bb14507b327f
 title = Karmageddon
-briefing = 
+briefing = Kerbin's love the movie Karmageddon! Despite the science being completely inaccurate, a petition has received enough signatures to launch a dress rehearsal.\n\nWe will launch our Freedom Orbiter with our Karmadillo mining rover. After refueling at the Kir Space Station, we will intercept an asteroid near the Mun. The one we placed there during our more scientifically accurate Asteroid Redirect mission.\n\nIs this wise? No. Will this gain public acclaim and more funds for our space program? YES.
 author = Daniel Tsosie
 hardIcon = False
-difficulty = Intermediate
+difficulty = Advanced
 vesselCount = 2
 nodeCount = 13
 startUT = 0
