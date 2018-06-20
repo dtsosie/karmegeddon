@@ -15,7 +15,7 @@ MISSION
 	bannerFail = fail01.png
 	isScoreEnabled = True
 	maxScore = 1000
-	historyId = cfd33b4a-a224-40da-a44b-7928ecb774cf
+	historyId = 447196e4-5f39-4166-85c3-aff41619068e
 	activeNodeID = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 	currentScore = 0
 	exportName = 
@@ -1423,7 +1423,7 @@ MISSION
 					restartOnSceneLoad = False
 					isRunning = False
 					messageHeading = Mun Approached
-					message = We have arrived near the mun. We can swing by the asteroid for a selfie. But this is a dress rehearsal so we just want to get back home. Feel free to eject the likely now empty aux fuel pods or even the Karmadillo if you don't have enough fuel.
+					message = We have arrived near the mun. We can swing 10km by the asteroid for a selfie. But this is only a dress rehearsal so we just want to get back home. Feel free to eject the likely now empty aux fuel pods or even the Karmadillo if you don't have enough fuel.
 					instructorName = Instructor_Gene
 					vintageSuit = False
 					textAreaSize = 135
@@ -1608,7 +1608,7 @@ MISSION
 			isStartNode = False
 			isEndNode = False
 			message = 
-			isObjective = True
+			isObjective = False
 			isCatchAll = False
 			isEvent = False
 			activateOnceOnly = True
@@ -1703,7 +1703,7 @@ MISSION
 			category = CurrencyAndScore
 			showScreenMessage = False
 			msgTime = 5
-			editorPosition = 1838.74756,251.612793
+			editorPosition = 2113.0332,520.18457
 			isStartNode = False
 			isEndNode = False
 			message = 
@@ -2242,7 +2242,7 @@ MISSION
 }
 EDITOR_STATUS
 {
-	canvasPosition = 2294.19922,-2857.46143
+	canvasPosition = 1508.19922,-2973.46143
 	zoomLevel = 0.699999928
 	canvasSize = 10000,10000
 }
