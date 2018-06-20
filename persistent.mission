@@ -15,7 +15,7 @@ MISSION
 	bannerFail = fail01.png
 	isScoreEnabled = True
 	maxScore = 0
-	historyId = b026329f-c868-429b-afa9-3f215bd7f48b
+	historyId = 03a31246-713e-4a64-b37e-37f82532990e
 	activeNodeID = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 	currentScore = 0
 	exportName = 
@@ -80,7 +80,7 @@ MISSION
 				badS = False
 				veteran = True
 				tour = False
-				state = Available
+				state = Assigned
 				inactive = False
 				inactiveTimeEnd = 0
 				gExperienced = 0
@@ -398,6 +398,10 @@ MISSION
 			score = 0
 			resourceName = LiquidFuel
 			resourceAmount = 0
+			PROGRESS
+			{
+				totalSpentResource = 0
+			}
 		}
 		AWARDMODULE
 		{
@@ -406,6 +410,10 @@ MISSION
 			awardID = KerbalsSurvived
 			enabled = False
 			score = 0
+			PROGRESS
+			{
+				kerbalsAreAlive = True
+			}
 		}
 		AWARDMODULE
 		{
@@ -423,6 +431,10 @@ MISSION
 			enabled = False
 			score = 0
 			distance = 0
+			PROGRESS
+			{
+				distanceTraveled = 0
+			}
 		}
 		AWARDMODULE
 		{
@@ -432,6 +444,10 @@ MISSION
 			enabled = False
 			score = 0
 			distance = 0
+			PROGRESS
+			{
+				distanceTraveled = 0
+			}
 		}
 		AWARDMODULE
 		{
@@ -441,6 +457,9 @@ MISSION
 			enabled = False
 			score = 0
 			vesselsUsed = 0
+			PROGRESS
+			{
+			}
 		}
 		AWARDMODULE
 		{
@@ -460,6 +479,9 @@ MISSION
 			enabled = False
 			score = 0
 			planetsLanded = 0
+			PROGRESS
+			{
+			}
 		}
 		AWARDMODULE
 		{
@@ -606,7 +628,7 @@ MISSION
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 56.624576782709198
+								editorRotation = 347.76863463325799
 							}
 						}
 						PARTCREW
@@ -614,6 +636,7 @@ MISSION
 							partPersistentId = 4270115010
 							vesselPersistentId = 1574579380
 							crew = Valentina Kerman
+							crew = Bill Kerman
 						}
 					}
 				}
@@ -704,7 +727,7 @@ MISSION
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 56.624576782709198
+								editorRotation = 347.76863463325799
 							}
 						}
 						PARTCREW
@@ -727,7 +750,7 @@ MISSION
 		}
 		NODE
 		{
-			title = Dialog Message
+			title = Launch Instructions
 			id = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
 			description = Display a message in a dialog box
 			category = Utility
@@ -777,8 +800,8 @@ MISSION
 					parametersDisplayedInSAP = missionInstructor
 					restartOnSceneLoad = False
 					isRunning = False
-					messageHeading = Get geady to head to the Kir
-					message = As an experience pilot, choose your launch window. When you do though, make sure your engines are at full, pitch back at full, and head on intercept east.
+					messageHeading = Launch Target Kir
+					message = As an experienced pilot, choose your launch window. When you do though, make sure your engines are at full, pitch back at full, and head on intercept east.
 					instructorName = Instructor_Gene
 					vintageSuit = False
 					textAreaSize = 135
@@ -900,7 +923,7 @@ MISSION
 		}
 		NODE
 		{
-			title = Dialog Message
+			title = Kir Proximity Message
 			id = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 			description = Display a message in a dialog box
 			category = Utility
@@ -950,7 +973,8 @@ MISSION
 					parametersDisplayedInSAP = missionInstructor
 					restartOnSceneLoad = False
 					isRunning = False
-					message = You are in range of Kir. You are clear to dock.
+					messageHeading = Dock with Kir
+					message = You are in range of Kir. You are clear to dock. Hit action group one to unshield the docking port and allow electrical solar power generation.
 					instructorName = Instructor_Gene
 					vintageSuit = False
 					textAreaSize = 135
@@ -973,7 +997,7 @@ MISSION
 		}
 		NODE
 		{
-			title = Part Docking / Undocking
+			title = Kir Docking
 			id = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 			description = Test whether two parts are docked in the same vessel or not
 			category = Vessel
@@ -1003,7 +1027,7 @@ MISSION
 			}
 			TONODEIDS
 			{
-				nodeID = aeb04335-86f9-49e1-a396-518e040aacae
+				nodeID = 7669072e-2ad8-42ff-a044-bd59c5f412a0
 			}
 			TESTGROUPS
 			{
@@ -1054,13 +1078,13 @@ MISSION
 		}
 		NODE
 		{
-			title = Part Docking / Undocking
+			title = Kir Undocking
 			id = aeb04335-86f9-49e1-a396-518e040aacae
 			description = Test whether two parts are docked in the same vessel or not
 			category = Vessel
 			showScreenMessage = False
 			msgTime = 5
-			editorPosition = 741.98877,-223.831543
+			editorPosition = 744.845703,-369.545898
 			isStartNode = False
 			isEndNode = False
 			message = 
@@ -1078,7 +1102,7 @@ MISSION
 			{
 				FROMNODE
 				{
-					nodeID = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+					nodeID = 7669072e-2ad8-42ff-a044-bd59c5f412a0
 					connectorColor = #FFFFFF
 				}
 			}
@@ -1135,7 +1159,7 @@ MISSION
 		}
 		NODE
 		{
-			title = Dialog Message
+			title = Mun Intercept Message
 			id = e5888587-a092-4ae2-8eec-ce9d206f9b0d
 			description = Display a message in a dialog box
 			category = Utility
@@ -1185,6 +1209,7 @@ MISSION
 					parametersDisplayedInSAP = missionInstructor
 					restartOnSceneLoad = False
 					isRunning = False
+					messageHeading = Mun Rendezvous
 					message = Head for the Mun
 					instructorName = Instructor_Gene
 					vintageSuit = False
@@ -1331,7 +1356,7 @@ MISSION
 					{
 						SMA = 250000
 						ECC = 0
-						INC = 0.0001
+						INC = 180
 						LPE = 0
 						LAN = 0
 						MNA = 0
@@ -1362,7 +1387,7 @@ MISSION
 		}
 		NODE
 		{
-			title = Dialog Message
+			title = Mun Apprach Message
 			id = dae66e5b-288c-4770-9f93-ac7a3a9eab70
 			description = Display a message in a dialog box
 			category = Utility
@@ -1412,7 +1437,8 @@ MISSION
 					parametersDisplayedInSAP = missionInstructor
 					restartOnSceneLoad = False
 					isRunning = False
-					message = Time to head back home
+					messageHeading = Mun Approached
+					message = We have arrived near the mun. We can swing by the asteroid for a selfie. But this is a dress rehearsal so we just want to get back home. Feel free to eject the likely now empty aux fuel pods or even the Karmadillo if you don't have enough fuel.
 					instructorName = Instructor_Gene
 					vintageSuit = False
 					textAreaSize = 135
@@ -1511,6 +1537,80 @@ MISSION
 				}
 			}
 		}
+		NODE
+		{
+			title = Refueling Message
+			id = 7669072e-2ad8-42ff-a044-bd59c5f412a0
+			description = Display a message in a dialog box
+			category = Utility
+			showScreenMessage = False
+			msgTime = 5
+			editorPosition = 744.461914,-236.958984
+			isStartNode = False
+			isEndNode = False
+			message = 
+			isObjective = False
+			isCatchAll = False
+			isEvent = False
+			activateOnceOnly = True
+			activatedUT = 0
+			isLogicNode = False
+			basicNodeSource = DialogMessage
+			basicNodeIconURL = dialog-message
+			nodeColor = #F68834
+			missionEndOptions = Success
+			FROMNODES
+			{
+				FROMNODE
+				{
+					nodeID = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+					connectorColor = #FFFFFF
+				}
+			}
+			TONODEIDS
+			{
+				nodeID = aeb04335-86f9-49e1-a396-518e040aacae
+			}
+			TESTGROUPS
+			{
+				TESTGROUP
+				{
+					title = 
+				}
+			}
+			ACTIONS
+			{
+				ACTIONMODULE
+				{
+					name = ActionDialogMessage
+					title = Dialog Message
+					parametersDisplayedInSAP = messageHeading
+					parametersDisplayedInSAP = message
+					parametersDisplayedInSAP = missionInstructor
+					restartOnSceneLoad = False
+					isRunning = False
+					messageHeading = Refuel the Shuttle
+					message = Please proceed to refilling operations. Once your tanks are filled, undock.
+					instructorName = Instructor_Gene
+					vintageSuit = False
+					textAreaSize = 135
+					pauseMission = False
+					screenArea = Center
+					autoClose = False
+					autoCloseTimeOut = 20
+					isBriefingMessage = False
+					autoGrowDialogHeight = False
+				}
+			}
+			NODEBODY_PARAMETERS
+			{
+				MODULE_PARAMETER
+				{
+					module = ActionDialogMessage
+					parameter = missionInstructor
+				}
+			}
+		}
 	}
 	TAGS
 	{
@@ -1563,9 +1663,22 @@ MISSION
 			}
 			PATHINFO
 			{
+				startNodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
+				PATH
+				{
+					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
+					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
+					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
+					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
+					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
+				}
+			}
+			PATHINFO
+			{
 				startNodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 				PATH
 				{
+					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
 					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
 					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
@@ -1579,6 +1692,7 @@ MISSION
 				PATH
 				{
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
 					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
 					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
@@ -1593,6 +1707,7 @@ MISSION
 				{
 					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
 					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
 					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
@@ -1608,6 +1723,7 @@ MISSION
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
 					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
 					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
 					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
@@ -1624,6 +1740,7 @@ MISSION
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
 					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
 					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
 					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
@@ -1678,9 +1795,22 @@ MISSION
 			}
 			PATHINFO
 			{
+				startNodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
+				PATH
+				{
+					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
+					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
+					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
+					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
+					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
+				}
+			}
+			PATHINFO
+			{
 				startNodeId = aeb04335-86f9-49e1-a396-518e040aacae
 				PATH
 				{
+					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
@@ -1694,6 +1824,7 @@ MISSION
 				PATH
 				{
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
+					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
@@ -1708,6 +1839,7 @@ MISSION
 				{
 					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
+					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
@@ -1723,6 +1855,7 @@ MISSION
 					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
 					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
+					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
@@ -1739,6 +1872,7 @@ MISSION
 					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
 					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
 					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
+					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
 					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
 					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
 					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
@@ -1767,6 +1901,10 @@ MISSION
 			}
 			NODE
 			{
+				id = 7669072e-2ad8-42ff-a044-bd59c5f412a0
+			}
+			NODE
+			{
 				id = aeb04335-86f9-49e1-a396-518e040aacae
 			}
 			NODE
@@ -1790,7 +1928,7 @@ MISSION
 }
 EDITOR_STATUS
 {
-	canvasPosition = 2468.55591,-2897.46167
+	canvasPosition = 2098.55591,-2909.46167
 	zoomLevel = 0.699999928
 	canvasSize = 10000,10000
 }
