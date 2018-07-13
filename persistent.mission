@@ -16,7 +16,7 @@ MISSION
 	bannerFail = fail01.png
 	isScoreEnabled = True
 	maxScore = 1000
-	steamPublishedFileId = 0
+	steamPublishedFileId = 1439883624
 	historyId = fd987439-2f5d-4de7-a45c-521efbab6e82
 	activeNodeID = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 	currentScore = 0
@@ -381,7 +381,7 @@ MISSION
 		SCOREMODULE
 		{
 			name = ScoreModule_Completion
-			id = 122
+			id = 735
 			bonusScore = 400
 		}
 	}
@@ -390,7 +390,7 @@ MISSION
 		AWARDMODULE
 		{
 			name = AwardModule_MissionTime
-			id = 110
+			id = 723
 			awardID = MissionTime
 			enabled = False
 			score = 0
@@ -399,25 +399,33 @@ MISSION
 		AWARDMODULE
 		{
 			name = AwardModule_Fuel
-			id = 111
+			id = 724
 			awardID = Fuel
 			enabled = False
 			score = 0
 			resourceName = LiquidFuel
 			resourceAmount = 0
+			PROGRESS
+			{
+				totalSpentResource = 0
+			}
 		}
 		AWARDMODULE
 		{
 			name = AwardModule_KerbalsSurvived
-			id = 112
+			id = 725
 			awardID = KerbalsSurvived
 			enabled = False
 			score = 0
+			PROGRESS
+			{
+				kerbalsAreAlive = True
+			}
 		}
 		AWARDMODULE
 		{
 			name = AwardModule_KerbalsDied
-			id = 113
+			id = 726
 			awardID = KerbalsDied
 			enabled = False
 			score = 0
@@ -425,34 +433,45 @@ MISSION
 		AWARDMODULE
 		{
 			name = AwardModule_TraveledLessThan
-			id = 114
+			id = 727
 			awardID = TraveledLessThan
 			enabled = False
 			score = 0
 			distance = 0
+			PROGRESS
+			{
+				distanceTraveled = 0
+			}
 		}
 		AWARDMODULE
 		{
 			name = AwardModule_TraveledMoreThan
-			id = 115
+			id = 728
 			awardID = TraveledMoreThan
 			enabled = False
 			score = 0
 			distance = 0
+			PROGRESS
+			{
+				distanceTraveled = 0
+			}
 		}
 		AWARDMODULE
 		{
 			name = AwardModule_VesselsUsed
-			id = 116
+			id = 729
 			awardID = VesselsUsed
 			enabled = False
 			score = 0
 			vesselsUsed = 0
+			PROGRESS
+			{
+			}
 		}
 		AWARDMODULE
 		{
 			name = AwardModule_LandedOn
-			id = 117
+			id = 730
 			awardID = LandedOn
 			enabled = False
 			score = 0
@@ -462,16 +481,19 @@ MISSION
 		AWARDMODULE
 		{
 			name = AwardModule_PlanetsLanded
-			id = 118
+			id = 731
 			awardID = PlanetsLanded
 			enabled = False
 			score = 0
 			planetsLanded = 0
+			PROGRESS
+			{
+			}
 		}
 		AWARDMODULE
 		{
 			name = AwardModule_Score
-			id = 119
+			id = 732
 			awardID = BronzeAward
 			enabled = True
 			score = 400
@@ -479,7 +501,7 @@ MISSION
 		AWARDMODULE
 		{
 			name = AwardModule_Score
-			id = 120
+			id = 733
 			awardID = SilverAward
 			enabled = True
 			score = 900
@@ -487,7 +509,7 @@ MISSION
 		AWARDMODULE
 		{
 			name = AwardModule_Score
-			id = 121
+			id = 734
 			awardID = GoldAward
 			enabled = True
 			score = 1000
@@ -613,7 +635,7 @@ MISSION
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 230
+								editorRotation = 291.02205687190479
 							}
 						}
 						PARTCREW
@@ -712,7 +734,7 @@ MISSION
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 230
+								editorRotation = 291.02205687190479
 							}
 						}
 						PARTCREW
