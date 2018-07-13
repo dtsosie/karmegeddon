@@ -11,7 +11,7 @@ MISSION
 	isBriefingSet = True
 	seed = 1172241752
 	flag = Squad/Flags/default
-	bannerMenu = MBanner_03.png
+	bannerMenu = MBanner_Custom.png
 	bannerSuccess = success02.png
 	bannerFail = fail01.png
 	isScoreEnabled = True
@@ -381,7 +381,7 @@ MISSION
 		SCOREMODULE
 		{
 			name = ScoreModule_Completion
-			id = 638
+			id = 122
 			bonusScore = 400
 		}
 	}
@@ -390,7 +390,7 @@ MISSION
 		AWARDMODULE
 		{
 			name = AwardModule_MissionTime
-			id = 626
+			id = 110
 			awardID = MissionTime
 			enabled = False
 			score = 0
@@ -399,7 +399,7 @@ MISSION
 		AWARDMODULE
 		{
 			name = AwardModule_Fuel
-			id = 627
+			id = 111
 			awardID = Fuel
 			enabled = False
 			score = 0
@@ -409,7 +409,7 @@ MISSION
 		AWARDMODULE
 		{
 			name = AwardModule_KerbalsSurvived
-			id = 628
+			id = 112
 			awardID = KerbalsSurvived
 			enabled = False
 			score = 0
@@ -417,7 +417,7 @@ MISSION
 		AWARDMODULE
 		{
 			name = AwardModule_KerbalsDied
-			id = 629
+			id = 113
 			awardID = KerbalsDied
 			enabled = False
 			score = 0
@@ -425,7 +425,7 @@ MISSION
 		AWARDMODULE
 		{
 			name = AwardModule_TraveledLessThan
-			id = 630
+			id = 114
 			awardID = TraveledLessThan
 			enabled = False
 			score = 0
@@ -434,7 +434,7 @@ MISSION
 		AWARDMODULE
 		{
 			name = AwardModule_TraveledMoreThan
-			id = 631
+			id = 115
 			awardID = TraveledMoreThan
 			enabled = False
 			score = 0
@@ -443,7 +443,7 @@ MISSION
 		AWARDMODULE
 		{
 			name = AwardModule_VesselsUsed
-			id = 632
+			id = 116
 			awardID = VesselsUsed
 			enabled = False
 			score = 0
@@ -452,7 +452,7 @@ MISSION
 		AWARDMODULE
 		{
 			name = AwardModule_LandedOn
-			id = 633
+			id = 117
 			awardID = LandedOn
 			enabled = False
 			score = 0
@@ -462,7 +462,7 @@ MISSION
 		AWARDMODULE
 		{
 			name = AwardModule_PlanetsLanded
-			id = 634
+			id = 118
 			awardID = PlanetsLanded
 			enabled = False
 			score = 0
@@ -471,7 +471,7 @@ MISSION
 		AWARDMODULE
 		{
 			name = AwardModule_Score
-			id = 635
+			id = 119
 			awardID = BronzeAward
 			enabled = True
 			score = 400
@@ -479,7 +479,7 @@ MISSION
 		AWARDMODULE
 		{
 			name = AwardModule_Score
-			id = 636
+			id = 120
 			awardID = SilverAward
 			enabled = True
 			score = 900
@@ -487,7 +487,7 @@ MISSION
 		AWARDMODULE
 		{
 			name = AwardModule_Score
-			id = 637
+			id = 121
 			awardID = GoldAward
 			enabled = True
 			score = 1000
