@@ -1,6 +1,7 @@
 MISSION
 {
 	id = f0a1d5c3-91ee-4006-a202-bb14507b327f
+	expansionVersion = 1.3.0
 	title = Karmageddon
 	briefing = Kerbin's love the movie Karmageddon! Despite the science being completely inaccurate, a petition has received enough signatures to launch a dress rehearsal.\n\nWe will launch our Freedom Orbiter with our Karmadillo mining rover. After refueling at the Kir Space Station, we will intercept an asteroid near the Mun. The one we placed there during our more scientifically accurate Asteroid Redirect mission.\n\nIs this wise? No. Will this gain public acclaim and more funds for our space program? YES.
 	author = Daniel Tsosie
@@ -15,7 +16,8 @@ MISSION
 	bannerFail = fail01.png
 	isScoreEnabled = True
 	maxScore = 1000
-	historyId = 847df0d5-b726-4731-9a70-171b7e29c129
+	steamPublishedFileId = 0
+	historyId = fd987439-2f5d-4de7-a45c-521efbab6e82
 	activeNodeID = 4f9f95b1-98aa-451c-8a18-f5046413b10f
 	currentScore = 0
 	exportName = Mission-Karmageddon
@@ -27,7 +29,6 @@ MISSION
 	cameraLockOptions = Unlock
 	SITUATION
 	{
-		version = 1.4.0
 		startType = VesselList
 		startVessel = 1574579380
 		autoGenerateCrew = False
@@ -612,7 +613,7 @@ MISSION
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 145.27650209546587
+								editorRotation = 230
 							}
 						}
 						PARTCREW
@@ -711,7 +712,7 @@ MISSION
 								MNA = 0
 								EPH = 0
 								REF = 1
-								editorRotation = 145.27650209546587
+								editorRotation = 230
 							}
 						}
 						PARTCREW
@@ -1028,15 +1029,15 @@ MISSION
 						dockedUndocked = Docked
 						PARTONE
 						{
-							partPersistentId = 0
+							partPersistentId = 4149282499
 							vesselPersistentId = 1574579380
-							partName = Any
+							partName = Clamp-O-Tron Shielded Docking Port
 						}
 						PARTTWO
 						{
-							partPersistentId = 0
+							partPersistentId = 4084552123
 							vesselPersistentId = 560805478
-							partName = Any
+							partName = Clamp-O-Tron Docking Port
 						}
 					}
 				}
@@ -1109,15 +1110,15 @@ MISSION
 						dockedUndocked = Undocked
 						PARTONE
 						{
-							partPersistentId = 0
+							partPersistentId = 4149282499
 							vesselPersistentId = 1574579380
-							partName = Any
+							partName = Clamp-O-Tron Shielded Docking Port
 						}
 						PARTTWO
 						{
-							partPersistentId = 0
+							partPersistentId = 4084552123
 							vesselPersistentId = 560805478
-							partName = Any
+							partName = Clamp-O-Tron Docking Port
 						}
 					}
 				}
@@ -1487,6 +1488,7 @@ MISSION
 						vesselID = 0
 						stabilizationTime = 1
 						locationChoice = bodyData
+						LAUNCHSITEDATA = 
 						surfaceVelocity = 0.10000000149011612
 						BODYDATA
 						{
@@ -2188,564 +2190,6 @@ MISSION
 	}
 	FLOW
 	{
-		FORWARDPATHS
-		{
-			PATHINFO
-			{
-				startNodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
-			}
-			PATHINFO
-			{
-				startNodeId = 13f406a1-ae09-4259-bd1c-47c9805f445b
-				PATH
-				{
-					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = f8fd5e17-0d46-4690-a085-5d660c40b845
-				PATH
-				{
-					nodeId = 13f406a1-ae09-4259-bd1c-47c9805f445b
-					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-				PATH
-				{
-					nodeId = f8fd5e17-0d46-4690-a085-5d660c40b845
-					nodeId = 13f406a1-ae09-4259-bd1c-47c9805f445b
-					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = a05c349f-3b26-4ce8-86f1-5cde0fa0ff88
-				PATH
-				{
-					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-					nodeId = f8fd5e17-0d46-4690-a085-5d660c40b845
-					nodeId = 13f406a1-ae09-4259-bd1c-47c9805f445b
-					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-				PATH
-				{
-					nodeId = a05c349f-3b26-4ce8-86f1-5cde0fa0ff88
-					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-					nodeId = f8fd5e17-0d46-4690-a085-5d660c40b845
-					nodeId = 13f406a1-ae09-4259-bd1c-47c9805f445b
-					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
-				PATH
-				{
-					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = a05c349f-3b26-4ce8-86f1-5cde0fa0ff88
-					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-					nodeId = f8fd5e17-0d46-4690-a085-5d660c40b845
-					nodeId = 13f406a1-ae09-4259-bd1c-47c9805f445b
-					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = aeb04335-86f9-49e1-a396-518e040aacae
-				PATH
-				{
-					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
-					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = a05c349f-3b26-4ce8-86f1-5cde0fa0ff88
-					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-					nodeId = f8fd5e17-0d46-4690-a085-5d660c40b845
-					nodeId = 13f406a1-ae09-4259-bd1c-47c9805f445b
-					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
-				PATH
-				{
-					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
-					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
-					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = a05c349f-3b26-4ce8-86f1-5cde0fa0ff88
-					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-					nodeId = f8fd5e17-0d46-4690-a085-5d660c40b845
-					nodeId = 13f406a1-ae09-4259-bd1c-47c9805f445b
-					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = 03bcb7c9-96d2-4c12-b76c-d34b049b4a38
-				PATH
-				{
-					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
-					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
-					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
-					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = a05c349f-3b26-4ce8-86f1-5cde0fa0ff88
-					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-					nodeId = f8fd5e17-0d46-4690-a085-5d660c40b845
-					nodeId = 13f406a1-ae09-4259-bd1c-47c9805f445b
-					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-				PATH
-				{
-					nodeId = 03bcb7c9-96d2-4c12-b76c-d34b049b4a38
-					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
-					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
-					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
-					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = a05c349f-3b26-4ce8-86f1-5cde0fa0ff88
-					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-					nodeId = f8fd5e17-0d46-4690-a085-5d660c40b845
-					nodeId = 13f406a1-ae09-4259-bd1c-47c9805f445b
-					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = 4d553a36-fbea-447a-a402-81726300f87a
-				PATH
-				{
-					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = 03bcb7c9-96d2-4c12-b76c-d34b049b4a38
-					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
-					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
-					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
-					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = a05c349f-3b26-4ce8-86f1-5cde0fa0ff88
-					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-					nodeId = f8fd5e17-0d46-4690-a085-5d660c40b845
-					nodeId = 13f406a1-ae09-4259-bd1c-47c9805f445b
-					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = 7694a000-20a2-4ad0-960d-3c44687c0bea
-				PATH
-				{
-					nodeId = 4d553a36-fbea-447a-a402-81726300f87a
-					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = 03bcb7c9-96d2-4c12-b76c-d34b049b4a38
-					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
-					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
-					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
-					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = a05c349f-3b26-4ce8-86f1-5cde0fa0ff88
-					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-					nodeId = f8fd5e17-0d46-4690-a085-5d660c40b845
-					nodeId = 13f406a1-ae09-4259-bd1c-47c9805f445b
-					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = bd3a9383-c8b9-40d6-a82d-ce8abe88b3af
-				PATH
-				{
-					nodeId = 7694a000-20a2-4ad0-960d-3c44687c0bea
-					nodeId = 4d553a36-fbea-447a-a402-81726300f87a
-					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = 03bcb7c9-96d2-4c12-b76c-d34b049b4a38
-					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
-					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
-					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
-					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = a05c349f-3b26-4ce8-86f1-5cde0fa0ff88
-					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-					nodeId = f8fd5e17-0d46-4690-a085-5d660c40b845
-					nodeId = 13f406a1-ae09-4259-bd1c-47c9805f445b
-					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
-				PATH
-				{
-					nodeId = bd3a9383-c8b9-40d6-a82d-ce8abe88b3af
-					nodeId = 7694a000-20a2-4ad0-960d-3c44687c0bea
-					nodeId = 4d553a36-fbea-447a-a402-81726300f87a
-					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = 03bcb7c9-96d2-4c12-b76c-d34b049b4a38
-					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
-					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
-					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
-					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = a05c349f-3b26-4ce8-86f1-5cde0fa0ff88
-					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-					nodeId = f8fd5e17-0d46-4690-a085-5d660c40b845
-					nodeId = 13f406a1-ae09-4259-bd1c-47c9805f445b
-					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-				PATH
-				{
-					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
-					nodeId = bd3a9383-c8b9-40d6-a82d-ce8abe88b3af
-					nodeId = 7694a000-20a2-4ad0-960d-3c44687c0bea
-					nodeId = 4d553a36-fbea-447a-a402-81726300f87a
-					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = 03bcb7c9-96d2-4c12-b76c-d34b049b4a38
-					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
-					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
-					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
-					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = a05c349f-3b26-4ce8-86f1-5cde0fa0ff88
-					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-					nodeId = f8fd5e17-0d46-4690-a085-5d660c40b845
-					nodeId = 13f406a1-ae09-4259-bd1c-47c9805f445b
-					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-				PATH
-				{
-					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
-					nodeId = bd3a9383-c8b9-40d6-a82d-ce8abe88b3af
-					nodeId = 7694a000-20a2-4ad0-960d-3c44687c0bea
-					nodeId = 4d553a36-fbea-447a-a402-81726300f87a
-					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = 03bcb7c9-96d2-4c12-b76c-d34b049b4a38
-					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
-					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
-					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
-					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = a05c349f-3b26-4ce8-86f1-5cde0fa0ff88
-					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-					nodeId = f8fd5e17-0d46-4690-a085-5d660c40b845
-					nodeId = 13f406a1-ae09-4259-bd1c-47c9805f445b
-					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
-				PATH
-				{
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
-					nodeId = bd3a9383-c8b9-40d6-a82d-ce8abe88b3af
-					nodeId = 7694a000-20a2-4ad0-960d-3c44687c0bea
-					nodeId = 4d553a36-fbea-447a-a402-81726300f87a
-					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = 03bcb7c9-96d2-4c12-b76c-d34b049b4a38
-					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
-					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
-					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
-					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = a05c349f-3b26-4ce8-86f1-5cde0fa0ff88
-					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-					nodeId = f8fd5e17-0d46-4690-a085-5d660c40b845
-					nodeId = 13f406a1-ae09-4259-bd1c-47c9805f445b
-					nodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
-				}
-			}
-		}
-		REVERSEPATHS
-		{
-			PATHINFO
-			{
-				startNodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
-			}
-			PATHINFO
-			{
-				startNodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-				PATH
-				{
-					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-				PATH
-				{
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
-				PATH
-				{
-					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = bd3a9383-c8b9-40d6-a82d-ce8abe88b3af
-				PATH
-				{
-					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
-					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = 7694a000-20a2-4ad0-960d-3c44687c0bea
-				PATH
-				{
-					nodeId = bd3a9383-c8b9-40d6-a82d-ce8abe88b3af
-					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
-					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = 4d553a36-fbea-447a-a402-81726300f87a
-				PATH
-				{
-					nodeId = 7694a000-20a2-4ad0-960d-3c44687c0bea
-					nodeId = bd3a9383-c8b9-40d6-a82d-ce8abe88b3af
-					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
-					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-				PATH
-				{
-					nodeId = 4d553a36-fbea-447a-a402-81726300f87a
-					nodeId = 7694a000-20a2-4ad0-960d-3c44687c0bea
-					nodeId = bd3a9383-c8b9-40d6-a82d-ce8abe88b3af
-					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
-					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = 03bcb7c9-96d2-4c12-b76c-d34b049b4a38
-				PATH
-				{
-					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = 4d553a36-fbea-447a-a402-81726300f87a
-					nodeId = 7694a000-20a2-4ad0-960d-3c44687c0bea
-					nodeId = bd3a9383-c8b9-40d6-a82d-ce8abe88b3af
-					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
-					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
-				PATH
-				{
-					nodeId = 03bcb7c9-96d2-4c12-b76c-d34b049b4a38
-					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = 4d553a36-fbea-447a-a402-81726300f87a
-					nodeId = 7694a000-20a2-4ad0-960d-3c44687c0bea
-					nodeId = bd3a9383-c8b9-40d6-a82d-ce8abe88b3af
-					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
-					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = aeb04335-86f9-49e1-a396-518e040aacae
-				PATH
-				{
-					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
-					nodeId = 03bcb7c9-96d2-4c12-b76c-d34b049b4a38
-					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = 4d553a36-fbea-447a-a402-81726300f87a
-					nodeId = 7694a000-20a2-4ad0-960d-3c44687c0bea
-					nodeId = bd3a9383-c8b9-40d6-a82d-ce8abe88b3af
-					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
-					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
-				PATH
-				{
-					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
-					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
-					nodeId = 03bcb7c9-96d2-4c12-b76c-d34b049b4a38
-					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = 4d553a36-fbea-447a-a402-81726300f87a
-					nodeId = 7694a000-20a2-4ad0-960d-3c44687c0bea
-					nodeId = bd3a9383-c8b9-40d6-a82d-ce8abe88b3af
-					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
-					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-				PATH
-				{
-					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
-					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
-					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
-					nodeId = 03bcb7c9-96d2-4c12-b76c-d34b049b4a38
-					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = 4d553a36-fbea-447a-a402-81726300f87a
-					nodeId = 7694a000-20a2-4ad0-960d-3c44687c0bea
-					nodeId = bd3a9383-c8b9-40d6-a82d-ce8abe88b3af
-					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
-					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = a05c349f-3b26-4ce8-86f1-5cde0fa0ff88
-				PATH
-				{
-					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
-					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
-					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
-					nodeId = 03bcb7c9-96d2-4c12-b76c-d34b049b4a38
-					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = 4d553a36-fbea-447a-a402-81726300f87a
-					nodeId = 7694a000-20a2-4ad0-960d-3c44687c0bea
-					nodeId = bd3a9383-c8b9-40d6-a82d-ce8abe88b3af
-					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
-					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-				PATH
-				{
-					nodeId = a05c349f-3b26-4ce8-86f1-5cde0fa0ff88
-					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
-					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
-					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
-					nodeId = 03bcb7c9-96d2-4c12-b76c-d34b049b4a38
-					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = 4d553a36-fbea-447a-a402-81726300f87a
-					nodeId = 7694a000-20a2-4ad0-960d-3c44687c0bea
-					nodeId = bd3a9383-c8b9-40d6-a82d-ce8abe88b3af
-					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
-					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = f8fd5e17-0d46-4690-a085-5d660c40b845
-				PATH
-				{
-					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-					nodeId = a05c349f-3b26-4ce8-86f1-5cde0fa0ff88
-					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
-					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
-					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
-					nodeId = 03bcb7c9-96d2-4c12-b76c-d34b049b4a38
-					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = 4d553a36-fbea-447a-a402-81726300f87a
-					nodeId = 7694a000-20a2-4ad0-960d-3c44687c0bea
-					nodeId = bd3a9383-c8b9-40d6-a82d-ce8abe88b3af
-					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
-					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = 13f406a1-ae09-4259-bd1c-47c9805f445b
-				PATH
-				{
-					nodeId = f8fd5e17-0d46-4690-a085-5d660c40b845
-					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-					nodeId = a05c349f-3b26-4ce8-86f1-5cde0fa0ff88
-					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
-					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
-					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
-					nodeId = 03bcb7c9-96d2-4c12-b76c-d34b049b4a38
-					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = 4d553a36-fbea-447a-a402-81726300f87a
-					nodeId = 7694a000-20a2-4ad0-960d-3c44687c0bea
-					nodeId = bd3a9383-c8b9-40d6-a82d-ce8abe88b3af
-					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
-					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
-				}
-			}
-			PATHINFO
-			{
-				startNodeId = 305df3cd-9acb-4864-a649-b550d12ac06b
-				PATH
-				{
-					nodeId = 13f406a1-ae09-4259-bd1c-47c9805f445b
-					nodeId = f8fd5e17-0d46-4690-a085-5d660c40b845
-					nodeId = dae66e5b-288c-4770-9f93-ac7a3a9eab70
-					nodeId = a05c349f-3b26-4ce8-86f1-5cde0fa0ff88
-					nodeId = 3541add6-5cc1-458e-9096-20c2782a7da6
-					nodeId = e5888587-a092-4ae2-8eec-ce9d206f9b0d
-					nodeId = aeb04335-86f9-49e1-a396-518e040aacae
-					nodeId = 7669072e-2ad8-42ff-a044-bd59c5f412a0
-					nodeId = 03bcb7c9-96d2-4c12-b76c-d34b049b4a38
-					nodeId = 5659ab3f-c590-4bf6-9f6a-2c0ad28eea70
-					nodeId = 4d553a36-fbea-447a-a402-81726300f87a
-					nodeId = 7694a000-20a2-4ad0-960d-3c44687c0bea
-					nodeId = bd3a9383-c8b9-40d6-a82d-ce8abe88b3af
-					nodeId = beb9f7ca-5d3c-46e7-94fe-69df7e971d63
-					nodeId = af064865-4849-4e03-a8d8-a113c5c30ed2
-					nodeId = 8b3a2f8c-f723-40e8-ab7a-c9d447a243fb
-					nodeId = 4f9f95b1-98aa-451c-8a18-f5046413b10f
-				}
-			}
-		}
 		BLOCKS
 		{
 			NODE
@@ -2821,7 +2265,6 @@ MISSION
 }
 EDITOR_STATUS
 {
-	canvasPosition = 1582.64111,-2584.50977
-	zoomLevel = 0.600000024
-	canvasSize = 10000,10000
+	canvasPosition = 708.150024,-306.299988,0
+	zoomLevel = 1
 }
